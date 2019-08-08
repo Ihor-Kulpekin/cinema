@@ -31,6 +31,7 @@ public class MovieServiceImpl implements MovieService {
         updatedMovie.setMainRoles(movie.getMainRoles());
         updatedMovie.setUrlImage(movie.getUrlImage());
         updatedMovie.setUrlTrailer(movie.getUrlTrailer());
+        updatedMovie.setNameMovie(movie.getNameMovie());
         movieRepository.save(updatedMovie);
     }
 

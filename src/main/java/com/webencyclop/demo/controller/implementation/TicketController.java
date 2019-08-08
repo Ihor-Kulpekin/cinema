@@ -7,6 +7,7 @@ import com.webencyclop.demo.service.interfaces.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -39,12 +40,12 @@ public class TicketController implements BaseTicketController {
     public ModelAndView saveTicket(@Valid Ticket ticket) {
         ModelAndView modelAndView = new ModelAndView();
         ticketService.addTicket(ticket);
-        modelAndView.setViewName("listTickets");
+        modelAndView.setViewName("redirect:/listTickets");
         return modelAndView;
     }
 
     @Override
-    public ModelAndView showPageEditTicket(int id) {
+    public ModelAndView showPageEditTicket(@PathVariable int id) {
         ModelAndView modelAndView = new ModelAndView("editTicket");
         Ticket ticket = ticketService.getTicketById(id);
         modelAndView.addObject("ticket",ticket);
@@ -59,17 +60,9 @@ public class TicketController implements BaseTicketController {
     }
 
     @Override
-    public ModelAndView deleteTicket(int id) {
+    public ModelAndView deleteTicket(@PathVariable int id) {
         ModelAndView modelAndView = new ModelAndView("listTickets");
         ticketService.removeTicket(id);
-        return modelAndView;
-    }
-
-    @Override
-    public ModelAndView detailsTicket(int id) {
-        ModelAndView modelAndView = new ModelAndView("detailsTicket");
-        Ticket ticket = ticketService.getTicketById(id);
-        modelAndView.addObject("ticket",ticket);
         return modelAndView;
     }
 }

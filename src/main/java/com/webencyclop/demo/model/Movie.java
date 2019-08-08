@@ -35,6 +35,9 @@ public class Movie {
     @Column(name = "Url_Image")
     private String urlImage;
 
+    @Column(name = "Name")
+    private String nameMovie;
+
     public int getId() {
         return id;
     }
@@ -105,5 +108,13 @@ public class Movie {
 
     public void setUrlImage(String urlImage) {
         this.urlImage = urlImage;
+    }
+
+    public String getNameMovie() {
+        return nameMovie;
+    }
+
+    public void setNameMovie(String nameMovie) {
+        this.nameMovie = nameMovie;
     }
 }

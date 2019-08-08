@@ -84,13 +84,6 @@ public class AuthenticationController implements BaseAuthenticationController {
 		}
 		return "redirect:/login?logout";
 	}
-
-	@RequestMapping(value = "/detail",method = RequestMethod.GET)
-	public ModelAndView show(){
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("detail");
-		return modelAndView;
-	}
 }
 
 

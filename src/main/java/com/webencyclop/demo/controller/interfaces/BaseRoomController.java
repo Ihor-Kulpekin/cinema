@@ -4,33 +4,30 @@ import com.webencyclop.demo.model.Movie;
 import com.webencyclop.demo.model.Room;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 
-@RequestMapping("/admin")
 public interface BaseRoomController {
-    @RequestMapping("/listRooms")
+    @GetMapping("/admin/listRooms")
     ModelAndView showListRooms();
 
-    @RequestMapping(value = "/newRoom",method = RequestMethod.GET)
+    @GetMapping("/admin/newRoom")
     ModelAndView showPageAddMovie();
 
-    @RequestMapping(value = "/newRoom",method = RequestMethod.POST)
-    ModelAndView saveMovie(@Valid Room room);
+    @PostMapping("/admin/newRoom")
+    String saveMovie(@Valid Room room);
 
-    @RequestMapping(value = "/editRoom/{id}",method = RequestMethod.GET)
+    @GetMapping("/admin/editRoom/{id}")
     ModelAndView showPageEditRoom(@PathVariable int id);
 
-    @RequestMapping(value = "/editRoom",method = RequestMethod.PUT)
-    ModelAndView editRoom(@Valid Room room);
+    @RequestMapping(value = "/admin/editRoom",method = RequestMethod.POST)
+    String editRoom(@Valid Room room);
 
-    @RequestMapping(value = "/deleteRoom/{id}",method = RequestMethod.DELETE)
-    ModelAndView deleteRoom(@PathVariable int id);
+    @GetMapping("/admin/deleteRoom/{id}")
+    String deleteRoom(@PathVariable int id);
 
-    @RequestMapping(value = "/detailRoom/{id}")
+    @RequestMapping(value = "/admin/detailRoom/{id}")
     ModelAndView detailsRoom(@PathVariable int id);
 }

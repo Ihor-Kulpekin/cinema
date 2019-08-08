@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add Movie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style>
+        #footer{
+            font-size:30px;
+            color:green;
+            text-align:center;
+            margin-top: 40%;
+        }
+    </style>
 </head>
 <body>
-
+<div class="container my-5">
+    <h3>Add Movie</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="col-md-10">
+                <form action="#" th:action="@{/admin/new}" th:object="${movie}"
+                      method="post">
+                    <div class="row">
+                        <input type="hidden" id="id" th:field="*{id}">
+                        <div class="form-group col-md-8">
+                            <label for="name" class="col-form-label">Name</label>
+                            <input type="text" th:field="*{nameMovie}" class="form-control"
+                                   id="name" placeholder="Genre" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="genre" class="col-form-label">Genre</label>
+                            <input type="text" th:field="*{genre}" class="form-control"
+                                   id="genre" placeholder="Genre" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="graduationYear" class="col-form-label">Graduation Year</label>
+                            <input type="text" th:field="*{graduationYear}" class="form-control"
+                                   id="graduationYear" placeholder="Graduation_Year" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="producer" class="col-form-label">Producer</label>
+                            <input type="text" th:field="*{director}" class="form-control"
+                                   id="producer" placeholder="Producer" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="duration" class="col-form-label">Duration</label>
+                            <input type="text" th:field="*{duration}" class="form-control"
+                                   id="duration" placeholder="Duration" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="mainRoles" class="col-form-label">Main Roles</label>
+                            <input type="text" th:field="*{mainRoles}" class="form-control"
+                                   id="mainRoles" placeholder="Genre" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="discription" class="col-form-label">Discription</label>
+                            <textarea  id="discription" th:field="*{discription}" class="form-control" placeholder="Discription">
+                            </textarea>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="urlTrailer" class="col-form-label">Url Trailer</label>
+                            <input type="text" th:field="*{urlTrailer}" class="form-control"
+                                   id="urlTrailer" placeholder="Genre" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="urlImage" class="col-form-label">Url Image</label>
+                            <input type="text" th:field="*{urlImage}" class="form-control"
+                                   id="urlImage" placeholder="Genre" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="submit" class="btn btn-primary" value=" Submit ">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p id="footer">2019 year</p>
+</footer>
 </body>
 </html>

@@ -2,6 +2,7 @@ package com.webencyclop.demo.service.implementation;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 
 import com.webencyclop.demo.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,8 +35,24 @@ public class UserServiceImp implements UserService {
 
 	@Override
 	public boolean isUserAlreadyPresent(User user) {
-		// Try to implement this method, as assignment.
+		if(user!=null){
+			return true;
+		}
 		return false;
 	}
 
+	@Override
+	public List<User> getAllUser() {
+		return userRepository.findAll();
+	}
+
+	@Override
+	public String updatePassword(User user) {
+		String email = user.getEmail();
+		String newPassword = user.getPassword();
+		user.setEmail(email);
+		user.setPassword(newPassword);
+		userRepository.save(user);
+		return "Success";
+	}
 }

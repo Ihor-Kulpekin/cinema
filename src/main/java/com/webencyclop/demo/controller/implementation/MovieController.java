@@ -6,6 +6,7 @@ import com.webencyclop.demo.model.Movie;
 import com.webencyclop.demo.service.interfaces.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -35,15 +36,15 @@ public class MovieController implements BaseMovieController {
     }
 
     @Override
-    public ModelAndView saveMovie(@Valid Movie movie) {
+    public String saveMovie(@Valid Movie movie) {
         ModelAndView modelAndView = new ModelAndView();
         movieService.addMovie(movie);
         modelAndView.setViewName("listMovies");
-        return modelAndView;
+        return "redirect:/listMovies";
     }
 
     @Override
-    public ModelAndView showPageEditMovie(int id) {
+    public ModelAndView showPageEditMovie(@PathVariable int id) {
         ModelAndView modelAndView = new ModelAndView("editMovie");
         Movie movie = movieService.getMovieById(id);
         modelAndView.addObject("movie",movie);
@@ -51,21 +52,20 @@ public class MovieController implements BaseMovieController {
     }
 
     @Override
-    public ModelAndView editMovie(@Valid Movie movie) {
-        ModelAndView modelAndView = new ModelAndView("listMovies");
+    public String editMovie(@Valid Movie movie) {
         movieService.updateMovie(movie);
-        return modelAndView;
+        return "redirect:/listMovies";
     }
 
     @Override
-    public ModelAndView deleteMovie(int id) {
+    public ModelAndView deleteMovie(@PathVariable int id) {
         ModelAndView modelAndView = new ModelAndView("listMovies");
         movieService.removeMovie(id);
         return modelAndView;
     }
 
     @Override
-    public ModelAndView detailsMovie(int id) {
+    public ModelAndView detailsMovie(@PathVariable int id) {
         ModelAndView modelAndView = new ModelAndView("detailsMovie");
         Movie movie = movieService.getMovieById(id);
         modelAndView.addObject("movie",movie);

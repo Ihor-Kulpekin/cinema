@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add Employee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style>
+        #footer{
+            font-size:30px;
+            color:green;
+            text-align:center;
+            margin-top: 40%;
+        }
+    </style>
 </head>
 <body>
-
+<div class="container my-5">
+    <h3> Add Ticket</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="col-md-10">
+                <form action="#" th:action="@{/admin/newTicket}" th:object="${ticket}"
+                      method="post">
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="price" class="col-form-label">Price</label>
+                            <input type="text" th:field="*{price}" class="form-control"
+                                   id="price" placeholder="price" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="time" class="col-form-label">Time</label>
+                            <input type="text" th:field="*{priceByTime}" class="form-control"
+                                   id="time" placeholder="Time" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="submit" class="btn btn-primary" value=" Submit ">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p id="footer">2019 year</p>
+</footer>
 </body>
 </html>

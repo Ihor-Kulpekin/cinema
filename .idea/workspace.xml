@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abf30ba2-56cd-47a9-8514-564edde9d11a" name="Default Changelist" comment="init commit">
+    <list default="true" id="abf30ba2-56cd-47a9-8514-564edde9d11a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/resetPassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glowstories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseAuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseMovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseMovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseTicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseTicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listUsers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editMovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editMovie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editTicket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listMovies.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listMovies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listRooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listRooms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listTickets.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listTickets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pageAddMovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pageAddMovie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pageAddRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pageAddRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pageAddTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pageAddTicket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/configuration/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/configuration/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/implementation/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/implementation/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/implementation/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/implementation/MovieController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/implementation/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/implementation/RoomController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/implementation/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/implementation/TicketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/interfaces/BaseAuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/interfaces/BaseAuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/interfaces/BaseMovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/interfaces/BaseMovieController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/interfaces/BaseRoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/interfaces/BaseRoomController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/interfaces/BaseTicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/controller/interfaces/BaseTicketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/model/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/model/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/service/implementation/MovieServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/service/implementation/MovieServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/service/implementation/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/service/implementation/UserServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/service/interfaces/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/service/interfaces/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/editMovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/editMovie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/editRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/editRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/editTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/editTicket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listMovies.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listMovies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listRooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listRooms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listTickets.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listTickets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pageAddMovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pageAddMovie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pageAddRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pageAddRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pageAddTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pageAddTicket.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,13 +99,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/TicketController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listUsers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="17">
+              <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/resetPassword.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/UserServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,51 +174,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/register.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/CustomLoginSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/SecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseAuthenticationController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/detail.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/AuthenticationController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/MovieRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/HibernateConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/implementation/MovieRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/RoleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/DemoApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/MovieRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/UserServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/MovieService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/MovieServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Ticket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/TicketRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/RoomRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Room.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseMovieController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/MovieController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseTicketController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/TicketService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/TicketServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/TicketController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseRoomController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/RoomService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/RoomServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/detailsMovie.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/detailsRoom.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/detailsTicket.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pageAddTicket.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/listTickets.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/TicketController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/listRooms.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pageAddRoom.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editTicket.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseTicketController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseRoomController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/RoomController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseMovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editRoom.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/MovieRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/MovieServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/listMovies.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pageAddMovie.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editMovie.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/detailsMovie.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/listRooms.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pageAddRoom.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/editRoom.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/detailsRoom.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/listTickets.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pageAddTicket.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/editTicket.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/detailsTicket.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/AuthenticationController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/register.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseAuthenticationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/listUsers.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/resetPassword.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/User.java" />
       </list>
     </option>
   </component>
@@ -135,9 +236,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
-    <option name="y" value="127" />
-    <option name="width" value="658" />
+    <option name="x" value="412" />
+    <option name="y" value="96" />
+    <option name="width" value="826" />
     <option name="height" value="598" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -153,6 +254,56 @@
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -171,7 +322,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565146948609" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565232576985" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -213,7 +364,7 @@
       <workItem from="1565130931489" duration="14450000" />
       <workItem from="1565177896365" duration="28000" />
       <workItem from="1565181488112" duration="1700000" />
-      <workItem from="1565183533751" duration="17000" />
+      <workItem from="1565183533751" duration="29924000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1565181961913</created>
@@ -229,16 +380,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565182782108</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1565183702123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565183702123</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19010000" />
+    <option name="totallyTimeSpent" value="48917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3245083" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.48638427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -249,7 +408,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43207857" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3617021" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -262,7 +421,7 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.25040916" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -276,7 +435,7 @@
       <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5249622" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3245083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -287,7 +446,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43207857" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43207857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,7 +459,7 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.25040916" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -362,164 +521,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/ServletInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/CustomLoginSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Spring-MVC-Hibernate-CRUD_Copy/src/main/java/com/kulpekin/service/interfaceService/ClientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/implementation/MovieRepositoryImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/RoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/UserServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/MovieRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/HibernateConfiguration.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d7d58956-d1f7-44fa-88d1-e04534f43333/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
-            <element signature="e#1446#1447#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1853#1854#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#1982#1983#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
-            <element signature="e#2048#2049#0" expanded="true" />
-            <element signature="e#2096#2097#0" expanded="true" />
-            <element signature="e#2136#2137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/MovieServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/TicketRepository.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -586,74 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/SecurityConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseAuthenticationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/AuthenticationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="79" column="19" lean-forward="true" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../PrintingHouse/src/main/java/com/kulpekin/controllers/ServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="70" column="80" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseMovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseTicketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/MovieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,16 +607,6 @@
             <element signature="e#1132#1133#0" expanded="true" />
             <element signature="e#1103#1104#0" expanded="true" />
             <element signature="e#1152#1153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseRoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -703,27 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listMovies.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pageAddMovie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editMovie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/detailsMovie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -731,69 +640,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listRooms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pageAddRoom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editRoom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/detailsRoom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/RoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listTickets.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pageAddTicket.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editTicket.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
@@ -808,13 +655,306 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/TicketController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pageAddTicket.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="265">
+          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseTicketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editTicket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listRooms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="86" column="50" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseRoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/RoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pageAddRoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="42" column="8" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editRoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/MovieRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/MovieServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/MovieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+            <element signature="e#2248#2249#0" expanded="true" />
+            <element signature="e#2298#2299#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listMovies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="110" column="26" lean-forward="true" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editMovie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pageAddMovie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/TicketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseMovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/MovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseAuthenticationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/AuthenticationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="71" column="64" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listTickets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/TicketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="28" selection-start-line="22" selection-start-column="8" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listUsers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="17" column="103" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.32/tomcat-embed-core-8.5.32.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/UserServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/resetPassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
