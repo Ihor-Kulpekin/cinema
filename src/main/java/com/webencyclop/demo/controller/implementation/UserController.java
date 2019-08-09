@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
 
 @Controller
 public class UserController implements BaseUserController {

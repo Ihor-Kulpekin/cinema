@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>WebEncyclop</title>
+    <meta charset="ISO-8859-1">
+    <title>User page</title>
+    <style>
+        #userText{
+            text-align: center;
+            color:honeydew;
+        }
+        #logout{
+            float: right;
+            margin-right: 25px;
+            color:#337ab7;
+        }
+        #headerButton{
+            margin-bottom:20px;
+            text-align:center;
+        }
+        #headerStyle{
+            background-color: dodgerblue;
+            width: 100%;
+        }
+        body{
+            background-color: #ebfff2;
+        }
+        a:hover{
+            background-color: #337ab7;
+        }
+        #userPage{
+            float: right;
+            color:#337ab7;
+            margin-right: 15px;
+        }
+        #footer{
+            font-size:30px;
+            color:#337ab7;
+            text-align:center;
+            margin-top: 40%;
+        }
+    </style>
 </head>
 <body>
-Hello user
-<form th:action="@{/logout}" method="post">
-    <input type="submit" value="LOGOUT">
-</form>
-<a href="/detail">dsdasdsadasd</a>
+<header id="headerStyle">
+    <h1 id="userText">User Page</h1>
+    <div id="headerButton">
+        <a href="/logout" id="logout">Logout</a>
+        <a href="/home" id="userPage">User Page</a>
+    </div>
+</header>
+<footer>
+    <p id="footer">2019 year</p>
+</footer>
 </body>
 </html>

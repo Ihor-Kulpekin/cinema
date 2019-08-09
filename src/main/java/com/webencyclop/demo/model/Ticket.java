@@ -12,7 +12,7 @@ public class Ticket {
     private int id;
 
     @Column(name = "Price")
-    private String price;
+    private int price;
 
     @Column(name = "Time")
     private String priceByTime;
@@ -25,11 +25,11 @@ public class Ticket {
         this.id = id;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

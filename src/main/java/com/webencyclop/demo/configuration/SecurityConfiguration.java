@@ -20,7 +20,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 	
 	@Autowired
-	private CustomLoginSuccessHandler sucessHandler;
+	private CustomLoginSuccessHandler successHandler;
 
 	@Autowired
 	private DataSource dataSource;
@@ -45,8 +45,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.antMatchers("/").permitAll()
 				.antMatchers("/resetPassword").permitAll()
 				.antMatchers("/login").permitAll()
+				.antMatchers("/detailsMovie/{id}").permitAll()
 				.antMatchers("/register").permitAll()
-				.antMatchers("/home/**").hasAnyAuthority("SUPER_USER", "ADMIN_USER", "SITE_USER")
+				.antMatchers("/home/**","/buyTicket/{id}").hasAnyAuthority("SUPER_USER", "ADMIN_USER", "SITE_USER")
 				.antMatchers("/admin/**").hasAnyAuthority("SUPER_USER","ADMIN_USER")
 				.anyRequest().authenticated()
 				.and()
@@ -54,21 +55,23 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.csrf().disable().formLogin()
 				.loginPage("/login")
 				.failureUrl("/login?error=true")
-				.successHandler(sucessHandler)
+				.successHandler(successHandler)
 				.usernameParameter("email")
 				.passwordParameter("password")
 				.and()
 				// logout
 				.logout()
 				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-				.logoutSuccessUrl("/login").and()
+				.logoutSuccessUrl("/").and()
 				.exceptionHandling()
 				.accessDeniedPage("/access-denied");
 	}
 
 	@Override
-	public void configure(WebSecurity web) throws Exception {
-		web.ignoring().antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**");
+	public void configure(WebSecurity web){
+		web.ignoring().antMatchers("/resources/**","/templates/**", "/static/**", "/css/**", "/js/**", "/images/**");
 	}
 
 }
+
+//CTRL+SHIFT+F

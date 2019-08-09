@@ -19,5 +19,4 @@ public interface BaseUserController {
 
     @GetMapping("/admin/listUsers")
     ModelAndView showPageListUsers();
-
 }

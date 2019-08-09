@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>All Tickets</title>
+    <title>All Movies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -95,13 +95,13 @@
                                 <td th:text="${movie.urlImage}"></td>
                                 <td>
                                     <a th:href="@{admin/edit/{id}(id=${movie.id})}"
-                                       class="btn btn-primary">
+                                       class="btn btn-primary">Edit
                                         <i class="fas fa-user-edit ml-2"></i>
                                     </a>
                                 </td>
                                 <td>
                                     <a th:href="@{admin/delete/{id}(id=${movie.id})}"
-                                       class="btn btn-primary">
+                                       class="btn btn-primary">Delete
                                         <i class="fas fa-user-times ml-2"></i>
                                     </a>
                                 </td>
