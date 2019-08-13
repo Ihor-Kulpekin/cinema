@@ -1,7 +1,7 @@
 package com.webencyclop.demo.service.implementation;
 
 import com.webencyclop.demo.model.Ordering;
-import com.webencyclop.demo.repository.OrderingRepository;
+import com.webencyclop.demo.repository.interfaces.OrderingRepository;
 import com.webencyclop.demo.service.interfaces.OrderingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,5 +22,10 @@ public class OrderingServiceImpl implements OrderingService {
     @Override
     public List<Ordering> listOrdering() {
         return orderingRepository.findAll();
+    }
+
+    @Override
+    public Ordering getOrderingById(int id) {
+        return orderingRepository.getOne(id);
     }
 }

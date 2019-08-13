@@ -1,4 +1,4 @@
-package com.webencyclop.demo.repository;
+package com.webencyclop.demo.repository.interfaces;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

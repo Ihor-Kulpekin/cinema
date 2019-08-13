@@ -1,7 +1,7 @@
 package com.webencyclop.demo.service.implementation;
 
 import com.webencyclop.demo.model.Ticket;
-import com.webencyclop.demo.repository.TicketRepository;
+import com.webencyclop.demo.repository.interfaces.TicketRepository;
 import com.webencyclop.demo.service.interfaces.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,6 +37,7 @@ public class TicketServiceImpl implements TicketService {
     public Ticket getTicketById(int id) {
         return ticketRepository.getOne(id);
     }
+
 
     @Override
     public List<Ticket> listTickets() {

@@ -1,6 +1,7 @@
 package com.webencyclop.demo.model;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "ordering")
@@ -11,15 +12,40 @@ public class Ordering {
     @Column(name = "Id")
     private int id;
 
-    @Column(name = "Id_Movie")
-    private int movieId;
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "Date_Ordering")
+    private Date dateOrdering;
 
-    @Column(name = "Id_Ticket")
-    private int ticketId;
+    @OneToOne
+    @JoinColumn(name = "Id_Movie",referencedColumnName = "Id")
+    private Movie movieId;
 
-    @Column(name = "Id_User")
-    private int userId;
+    @OneToOne
+    @JoinColumn(name = "Id_Ticket",referencedColumnName = "Id")
+    private Ticket ticketId;
 
+    @OneToOne
+    @JoinColumn(name = "Id_User",referencedColumnName = "auth_user_id")
+    private User userId;
+
+    @OneToOne
+    @JoinColumn(name = "Id_Room",referencedColumnName = "Id")
+    private Room roomId;
+
+    @Column(name = "SumPriceTicket")
+    private int sumPriceTicket;
+
+    public Ordering() {
+    }
+
+    public Ordering(Movie movieId, Ticket ticketId, User userId, Room roomId, int numberTicket, int sumPriceTicket) {
+        this.movieId = movieId;
+        this.ticketId = ticketId;
+        this.userId = userId;
+        this.roomId = roomId;
+        dateOrdering = new Date();
+        this.sumPriceTicket = sumPriceTicket;
+    }
 
     public int getId() {
         return id;
@@ -29,28 +55,51 @@ public class Ordering {
         this.id = id;
     }
 
-    public int getMovieId() {
+    public Movie getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(int movieId) {
+    public void setMovieId(Movie movieId) {
         this.movieId = movieId;
     }
 
-    public int getTicketId() {
+    public Ticket getTicketId() {
         return ticketId;
     }
 
-    public void setTicketId(int ticketId) {
+    public void setTicketId(Ticket ticketId) {
         this.ticketId = ticketId;
     }
 
-    public int getUserId() {
+    public User getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(User userId) {
         this.userId = userId;
     }
 
+    public Date getDateOrdering() {
+        return dateOrdering;
+    }
+
+    public void setDateOrdering(Date dateOrdering) {
+        this.dateOrdering = dateOrdering;
+    }
+
+    public Room getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(Room roomId) {
+        this.roomId = roomId;
+    }
+
+    public int getSumPriceTicket() {
+        return sumPriceTicket;
+    }
+
+    public void setSumPriceTicket(int sumPriceTicket) {
+        this.sumPriceTicket = sumPriceTicket;
+    }
 }

@@ -1,4 +1,4 @@
-package com.webencyclop.demo.repository;
+package com.webencyclop.demo.repository.interfaces;
 
 
 import com.webencyclop.demo.model.Movie;

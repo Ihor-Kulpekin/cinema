@@ -25,16 +25,6 @@ public class UserController implements BaseUserController {
         return modelAndView;
     }
 
-    @Override
-    public String resetPassword(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-        String email = httpServletRequest.getParameter("email");
-        String newPassword = httpServletRequest.getParameter("password");
-        User user = new User();
-        user.setEmail(email);
-        user.setPassword(newPassword);
-        userService.updatePassword(user);
-        return "redirect:/login";
-    }
 
     @Override
     public ModelAndView showPageListUsers() {

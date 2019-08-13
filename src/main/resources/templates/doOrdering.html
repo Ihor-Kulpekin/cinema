@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Buy Ticket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #footer{
+            font-size:30px;
+            color:green;
+            text-align:center;
+            margin-top: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Buy Ticket</h3>
+                <form action="/home/buyTicket" th:action="@{/home/buyTicket}" th:object="${ordering}" method="post">
+                              <tr>
+                                  <td><label for="movieId">Movie id</label></td>
+                                  <td><input th:field="${ordering.movieId.id}" type="text" id="movieId"></td>
+                              </tr>
+                              <tr>
+                                  <td><label for="ticketId">Ticket id</label></td>
+                                  <td><input th:field="*{ticketId}" type="text" id="ticketId"></td>
+                              </tr>
+                              <tr>
+                                  <td><label for="roomId">Room id</label></td>
+                                  <td><input th:field="*{roomId}" type="text" id="roomId"></td>
+                              </tr>
+                            <input type="submit" value="Submit ">
+                </form>
+    <footer><p id="footer">2019 year</p>
+    </footer>
+</body>
+</html>

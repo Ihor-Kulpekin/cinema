@@ -1,7 +1,7 @@
 package com.webencyclop.demo.service.implementation;
 
 import com.webencyclop.demo.model.Movie;
-import com.webencyclop.demo.repository.MovieRepository;
+import com.webencyclop.demo.repository.interfaces.MovieRepository;
 import com.webencyclop.demo.service.interfaces.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,4 +50,5 @@ public class MovieServiceImpl implements MovieService {
     public List<Movie> listMovies() {
         return movieRepository.findAll();
     }
+
 }

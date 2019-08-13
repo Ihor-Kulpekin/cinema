@@ -2,16 +2,7 @@ package com.webencyclop.demo.model;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
@@ -51,6 +42,11 @@ public class User {
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "auth_user_role", joinColumns = @JoinColumn(name = "auth_user_id"), inverseJoinColumns = @JoinColumn(name = "auth_role_id"))
 	private Set<Role> roles;
+
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "id_master_card",referencedColumnName = "Id")
+	private MasterCard id_master_card;
 
 	public int getId() {
 		return id;
@@ -107,6 +103,12 @@ public class User {
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
 	}
-	
 
+	public MasterCard getMasterCard() {
+		return id_master_card;
+	}
+
+	public void setMasterCard(MasterCard id_master_card) {
+		this.id_master_card = id_master_card;
+	}
 }

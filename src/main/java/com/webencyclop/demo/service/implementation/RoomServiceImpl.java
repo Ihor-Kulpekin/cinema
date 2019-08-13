@@ -1,7 +1,7 @@
 package com.webencyclop.demo.service.implementation;
 
 import com.webencyclop.demo.model.Room;
-import com.webencyclop.demo.repository.RoomRepository;
+import com.webencyclop.demo.repository.interfaces.RoomRepository;
 import com.webencyclop.demo.service.interfaces.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

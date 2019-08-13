@@ -3,6 +3,7 @@ package com.webencyclop.demo.service.implementation;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 
 import com.webencyclop.demo.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +12,8 @@ import org.springframework.stereotype.Service;
 
 import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
-import com.webencyclop.demo.repository.RoleRepository;
-import com.webencyclop.demo.repository.UserRepository;
+import com.webencyclop.demo.repository.interfaces.RoleRepository;
+import com.webencyclop.demo.repository.interfaces.UserRepository;
 
 @Service
 public class UserServiceImp implements UserService {
@@ -46,13 +47,11 @@ public class UserServiceImp implements UserService {
 		return userRepository.findAll();
 	}
 
+
 	@Override
-	public String updatePassword(User user) {
-		String email = user.getEmail();
-		String newPassword = user.getPassword();
-		user.setEmail(email);
-		user.setPassword(newPassword);
-		userRepository.save(user);
-		return "Success";
+	public User findUserByEmail(String email) {
+		return userRepository.findByEmail(email);
 	}
+
+
 }

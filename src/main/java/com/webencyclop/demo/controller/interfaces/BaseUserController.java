@@ -14,8 +14,6 @@ public interface BaseUserController {
     @GetMapping("/resetPassword")
     ModelAndView showPageResetPassword();
 
-    @PostMapping("/resetPassword")
-    String resetPassword(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse);
 
     @GetMapping("/admin/listUsers")
     ModelAndView showPageListUsers();

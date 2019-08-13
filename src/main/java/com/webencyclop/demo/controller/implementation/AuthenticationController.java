@@ -21,7 +21,7 @@ import com.webencyclop.demo.service.interfaces.UserService;
 public class AuthenticationController implements BaseAuthenticationController {
 
 	@Autowired
-	UserService userService;
+	private UserService userService;
 
 	@Override
 	public ModelAndView login() {

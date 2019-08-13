@@ -1,6 +1,8 @@
 package com.webencyclop.demo.service.interfaces;
 
 import java.util.List;
+import java.util.Optional;
+
 import com.webencyclop.demo.model.User;
 
 public interface UserService {
@@ -11,5 +13,5 @@ public interface UserService {
 
 	 List<User> getAllUser();
 
-	 String updatePassword(User user);
+	 User findUserByEmail(String email);
 }
