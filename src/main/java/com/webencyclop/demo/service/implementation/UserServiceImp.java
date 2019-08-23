@@ -14,6 +14,7 @@ import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
 import com.webencyclop.demo.repository.interfaces.RoleRepository;
 import com.webencyclop.demo.repository.interfaces.UserRepository;
+import org.springframework.test.web.servlet.MockMvc;
 
 @Service
 public class UserServiceImp implements UserService {

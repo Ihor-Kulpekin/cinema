@@ -22,7 +22,7 @@ public interface BaseRoomController {
     @GetMapping("/admin/editRoom/{id}")
     ModelAndView showPageEditRoom(@PathVariable int id);
 
-    @RequestMapping(value = "/admin/editRoom",method = RequestMethod.POST)
+    @PostMapping("/admin/editRoom")
     String editRoom(@Valid Room room);
 
     @GetMapping("/admin/deleteRoom/{id}")

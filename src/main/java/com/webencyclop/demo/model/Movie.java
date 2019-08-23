@@ -38,6 +38,22 @@ public class Movie {
     @Column(name = "Name")
     private String nameMovie;
 
+    public Movie() {
+    }
+
+    public Movie (Movie otherMovie){
+        this.id = otherMovie.id;
+        this.director = otherMovie.director;
+        this.discription = otherMovie.discription;
+        this.duration = otherMovie.duration;
+        this.graduationYear = otherMovie.graduationYear;
+        this.genre = otherMovie.genre;
+        this.mainRoles = otherMovie.mainRoles;
+        this.nameMovie = otherMovie.nameMovie;
+        this.urlImage = otherMovie.urlImage;
+        this.urlTrailer = otherMovie.urlTrailer;
+    }
+
     public int getId() {
         return id;
     }

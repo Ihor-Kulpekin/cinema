@@ -28,7 +28,7 @@ public class TicketController implements BaseTicketController {
     }
 
     @Override
-    public ModelAndView showPageAddMovie() {
+    public ModelAndView showPageAddTicket() {
         ModelAndView modelAndView = new ModelAndView();
         Ticket ticket = new Ticket();
         modelAndView.addObject("ticket",ticket);

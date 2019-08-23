@@ -12,7 +12,7 @@ public interface BaseTicketController {
     ModelAndView showListTicket();
 
     @GetMapping("/admin/newTicket")
-    ModelAndView showPageAddMovie();
+    ModelAndView showPageAddTicket();
 
     @PostMapping("/admin/newTicket")
     ModelAndView saveTicket(@Valid Ticket ticket);

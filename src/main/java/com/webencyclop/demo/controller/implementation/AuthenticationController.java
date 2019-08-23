@@ -83,13 +83,3 @@ public class AuthenticationController implements BaseAuthenticationController {
 		return "redirect:/?logout";
 	}
 }
-
-
-
-
-
-
-
-
-
-

@@ -8,7 +8,7 @@ public class Room {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "Id")
+    @Column(name = "id")
     private int id;
 
     @Column(name="Number_Room")
@@ -28,5 +28,13 @@ public class Room {
 
     public void setNumberRoom(String numberRoom) {
         this.numberRoom = numberRoom;
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "id=" + id +
+                ", numberRoom='" + numberRoom + '\'' +
+                '}';
     }
 }
