@@ -38,7 +38,7 @@ public class Ordering {
     public Ordering() {
     }
 
-    public Ordering(Movie movieId, Ticket ticketId, User userId, Room roomId, int numberTicket, int sumPriceTicket) {
+    public Ordering(Movie movieId, Ticket ticketId, User userId, Room roomId,int sumPriceTicket) {
         this.movieId = movieId;
         this.ticketId = ticketId;
         this.userId = userId;
