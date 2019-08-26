@@ -135,5 +135,7 @@
     <orderEntry type="library" name="Maven: junit:junit:4.13-beta-2" level="project" />
     <orderEntry type="library" name="Maven: com.icegreen:greenmail:1.5.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:5.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.6" level="project" />
   </component>
 </module>

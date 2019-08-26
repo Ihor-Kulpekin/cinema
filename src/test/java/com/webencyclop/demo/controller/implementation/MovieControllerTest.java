@@ -1,7 +1,5 @@
 package com.webencyclop.demo.controller.implementation;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.webencyclop.demo.model.Movie;
 import com.webencyclop.demo.service.interfaces.MovieService;
 import org.junit.Before;
@@ -20,15 +18,16 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.View;
-import org.thymeleaf.spring5.expression.Mvc;
 
-import static org.junit.Assert.*;
-import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.hamcrest.beans.HasProperty.hasProperty;
+import static org.hamcrest.core.IsInstanceOf.instanceOf;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.hamcrest.beans.HasProperty.hasProperty;
-import static org.hamcrest.core.IsInstanceOf.instanceOf;
 
 
 @SpringBootTest

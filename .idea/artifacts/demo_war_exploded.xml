@@ -99,6 +99,8 @@
           <element id="library" level="project" name="Maven: junit:junit:4.13-beta-2" />
           <element id="library" level="project" name="Maven: com.icegreen:greenmail:1.5.5" />
           <element id="library" level="project" name="Maven: org.springframework:spring-test:5.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.6" />
         </element>
       </element>
       <element id="directory" name="META-INF">
