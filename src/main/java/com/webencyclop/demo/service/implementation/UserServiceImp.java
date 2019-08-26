@@ -20,11 +20,11 @@ import org.springframework.test.web.servlet.MockMvc;
 public class UserServiceImp implements UserService {
 	
 	@Autowired
-	BCryptPasswordEncoder encoder;
+	private BCryptPasswordEncoder encoder;
 	@Autowired
-	RoleRepository roleRepository;
+	private RoleRepository roleRepository;
 	@Autowired
-	UserRepository userRepository;
+	private UserRepository userRepository;
 
 	@Override
 	public void saveUser(User user) {

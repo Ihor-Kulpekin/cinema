@@ -31,7 +31,6 @@ public class MovieServiceImplTest {
     @Before
     public void setUp() throws Exception {
         expectedMovie = new Movie();
-        expectedMovie.setId(1);
         expectedMovie.setNameMovie("The King");
         expectedMovie.setUrlTrailer("dasdas");
         expectedMovie.setUrlImage("sdasdad");
@@ -46,25 +45,14 @@ public class MovieServiceImplTest {
     @Test
     public void addMovie() {
         movieService.addMovie(expectedMovie);
-        Movie resultMovie = movieService.getMovieById(1);
+        Movie resultMovie = movieService.getMovieById(10);
         assertNotNull(resultMovie);
     }
 
 
-    // Need to fix errors
     @Test
     public void updateMovie() {
-        Movie resultMovie = new Movie();
-        resultMovie.setId(expectedMovie.getId());
-        resultMovie.setNameMovie(expectedMovie.getNameMovie());
-        resultMovie.setUrlTrailer(expectedMovie.getUrlTrailer());
-        resultMovie.setUrlImage(expectedMovie.getUrlImage());
-        resultMovie.setMainRoles(expectedMovie.getMainRoles());
-        resultMovie.setGraduationYear(expectedMovie.getGraduationYear());
-        resultMovie.setDuration(expectedMovie.getDuration());
-        resultMovie.setGenre(expectedMovie.getGenre());
-        resultMovie.setDirector(expectedMovie.getDirector());
-        resultMovie.setDiscription(expectedMovie.getDiscription());
+        Movie resultMovie = defineMovie();
         movieService.addMovie(resultMovie);
         resultMovie.setNameMovie("bla bla");
         movieService.updateMovie(resultMovie);
@@ -90,5 +78,21 @@ public class MovieServiceImplTest {
     @Test
     public void listMovies() {
         assertEquals(1L,movieService.listMovies().size());
+    }
+
+
+    private Movie defineMovie(){
+        Movie resultMovie = new Movie();
+        resultMovie.setNameMovie(expectedMovie.getNameMovie());
+        resultMovie.setUrlTrailer(expectedMovie.getUrlTrailer());
+        resultMovie.setUrlImage(expectedMovie.getUrlImage());
+        resultMovie.setMainRoles(expectedMovie.getMainRoles());
+        resultMovie.setGraduationYear(expectedMovie.getGraduationYear());
+        resultMovie.setDuration(expectedMovie.getDuration());
+        resultMovie.setGenre(expectedMovie.getGenre());
+        resultMovie.setDirector(expectedMovie.getDirector());
+        resultMovie.setDiscription(expectedMovie.getDiscription());
+
+        return resultMovie;
     }
 }
