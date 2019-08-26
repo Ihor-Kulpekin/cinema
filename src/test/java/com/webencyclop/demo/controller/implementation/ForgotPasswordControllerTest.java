@@ -149,5 +149,20 @@ public class ForgotPasswordControllerTest {
 
     @Test
     public void setNewPasswordTest() {
+        User resultUser = defineUser();
+
+    }
+
+
+    private User defineUser(){
+        User user = new User();
+        user.setId(1);
+        user.setName("Ihor");
+        user.setLastName("Kulpekin");
+        user.setEmail("ihor.kulpekin@gmail.com");
+        Role userRole = roleRepository.findByRole("SITE_USER");
+        user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+        user.setStatus("VERIFIED");
+        user.setPassword("123456789");
     }
 }
