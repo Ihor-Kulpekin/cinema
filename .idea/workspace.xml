@@ -9,8 +9,6 @@
     <list default="true" id="abf30ba2-56cd-47a9-8514-564edde9d11a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/service/implementation/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webencyclop/demo/service/implementation/UserServiceImp.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,20 +49,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImplTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            <state relative-caret-position="247">
+              <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/TicketControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="152" column="8" selection-start-line="152" selection-start-column="8" selection-end-line="152" selection-end-column="8" />
+            <state relative-caret-position="17">
+              <caret line="93" column="27" lean-forward="true" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseForgotPasswordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="213">
+              <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -85,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/ForgotPasswordController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -323,7 +324,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566813792591" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566814914978" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -363,7 +364,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmailSenderServiceImplTest.sendMail">
+  <component name="RunManager" selected="JUnit.ForgotPasswordControllerTest.setNewPasswordWithCorrectDataTest">
     <configuration name="EmailSenderServiceImplTest.sendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -380,7 +381,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ForgotPasswordControllerTest.processForgotPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ForgotPasswordControllerTest.setNewPasswordWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -390,13 +391,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webencyclop.demo.controller.implementation" />
       <option name="MAIN_CLASS_NAME" value="com.webencyclop.demo.controller.implementation.ForgotPasswordControllerTest" />
-      <option name="METHOD_NAME" value="processForgotPasswordTest" />
+      <option name="METHOD_NAME" value="setNewPasswordWithCorrectDataTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ForgotPasswordControllerTest.showForgotPasswordPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ForgotPasswordControllerTest.setNewPasswordWithErrorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -406,7 +407,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webencyclop.demo.controller.implementation" />
       <option name="MAIN_CLASS_NAME" value="com.webencyclop.demo.controller.implementation.ForgotPasswordControllerTest" />
-      <option name="METHOD_NAME" value="showForgotPasswordPageTest" />
+      <option name="METHOD_NAME" value="setNewPasswordWithErrorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -470,11 +471,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ForgotPasswordControllerTest.setNewPasswordWithCorrectDataTest" />
+        <item itemvalue="JUnit.ForgotPasswordControllerTest.setNewPasswordWithErrorTest" />
         <item itemvalue="JUnit.EmailSenderServiceImplTest.sendMail" />
         <item itemvalue="JUnit.MovieServiceImplTest.updateMovie" />
         <item itemvalue="JUnit.ForgotPasswordControllerTest.showResetPasswordPageTest" />
-        <item itemvalue="JUnit.ForgotPasswordControllerTest.processForgotPasswordTest" />
-        <item itemvalue="JUnit.ForgotPasswordControllerTest.showForgotPasswordPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -522,7 +523,7 @@
       <workItem from="1566486812538" duration="21687000" />
       <workItem from="1566522109835" duration="4065000" />
       <workItem from="1566651066164" duration="593000" />
-      <workItem from="1566810098747" duration="1937000" />
+      <workItem from="1566810098747" duration="2885000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1565181961913</created>
@@ -587,19 +588,17 @@
       <option name="project" value="LOCAL" />
       <updated>1566813022023</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test send mail method">
+      <created>1566814077521</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1566814077521</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ForgotPasswordControllerTest_processForgotPasswordTest - 2019.08.23 at 05h 10m 30s.xml">
-      <configuration name="ForgotPasswordControllerTest.processForgotPasswordTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ForgotPasswordControllerTest_processForgotPasswordTest - 2019.08.23 at 05h 11m 40s.xml">
-      <configuration name="ForgotPasswordControllerTest.processForgotPasswordTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ForgotPasswordControllerTest_processForgotPasswordTest - 2019.08.23 at 05h 13m 28s.xml">
-      <configuration name="ForgotPasswordControllerTest.processForgotPasswordTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ForgotPasswordControllerTest_processForgotPasswordTest - 2019.08.23 at 05h 14m 20s.xml">
       <configuration name="ForgotPasswordControllerTest.processForgotPasswordTest" configurationId="JUnit" />
     </history-entry>
@@ -621,9 +620,18 @@
     <history-entry file="EmailSenderServiceImplTest_sendMail - 2019.08.26 at 13h 03m 44s.xml">
       <configuration name="EmailSenderServiceImplTest.sendMail" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ForgotPasswordControllerTest_setNewPasswordWithErrorTest - 2019.08.26 at 13h 18m 05s.xml">
+      <configuration name="ForgotPasswordControllerTest.setNewPasswordWithErrorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForgotPasswordControllerTest_setNewPasswordWithErrorTest - 2019.08.26 at 13h 19m 02s.xml">
+      <configuration name="ForgotPasswordControllerTest.setNewPasswordWithErrorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForgotPasswordControllerTest_setNewPasswordWithCorrectDataTest - 2019.08.26 at 13h 22m 14s.xml">
+      <configuration name="ForgotPasswordControllerTest.setNewPasswordWithCorrectDataTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205235000" />
+    <option name="totallyTimeSpent" value="206183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -649,7 +657,7 @@
       <window_info content_ui="combo" id="Project" order="8" weight="0.23903178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3535188" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.46153846" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.46153846" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -762,7 +770,8 @@
     <MESSAGE value="all done" />
     <MESSAGE value="all done except buy ticket function" />
     <MESSAGE value="fix errors in testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix errors in testing" />
+    <MESSAGE value="test send mail method" />
+    <option name="LAST_COMMIT_MESSAGE" value="test send mail method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/ConfirmationTokenService.java">
@@ -1001,16 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/TicketControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="156" column="1" lean-forward="true" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/UserControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1149,29 +1148,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        <state relative-caret-position="128">
+          <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/TicketControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="93" column="27" lean-forward="true" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseForgotPasswordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="213">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/ForgotPasswordController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="152" column="8" selection-start-line="152" selection-start-column="8" selection-end-line="152" selection-end-column="8" />
+        <state relative-caret-position="247">
+          <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

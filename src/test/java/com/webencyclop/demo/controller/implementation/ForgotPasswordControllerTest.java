@@ -28,7 +28,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import static org.junit.Assert.*;
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -148,11 +147,52 @@ public class ForgotPasswordControllerTest {
     }
 
     @Test
-    public void setNewPasswordTest() {
-        User resultUser = defineUser();
-
+    public void setNewPasswordWithErrorTest() throws Exception {
+        String url = "/reset";
+        User resultUser = defineUserWithError();
+        doNothing().when(userService).saveUser(resultUser);
+        if(resultUser.getEmail()==null){
+            MvcResult mvcResult = mockMvc.perform(post(url))
+                    .andExpect(status().isOk())
+                    .andExpect(view().name("error"))
+                    .andReturn();
+            int status = mvcResult.getResponse().getStatus();
+            int expectedStatus = 200;
+            assertEquals(expectedStatus,status);
+        }
     }
 
+    @Test
+    public void setNewPasswordWithCorrectDataTest() throws Exception {
+        String url = "/reset";
+        User resultUser = defineUser();
+        doNothing().when(userService).saveUser(resultUser);
+        if(resultUser.getEmail()==null){
+            MvcResult mvcResult = mockMvc.perform(post(url))
+                    .andExpect(status().isOk())
+                    .andExpect(view().name("successResetPassword"))
+                    .andExpect(model().attribute("user",instanceOf(User.class)))
+                    .andExpect(model().attribute("user",hasProperty("password")))
+                    .andReturn();
+            int status = mvcResult.getResponse().getStatus();
+            int expectedStatus = 200;
+            assertEquals(expectedStatus,status);
+        }
+    }
+
+
+    private User defineUserWithError(){
+        User user = new User();
+        user.setId(1);
+        user.setName("Ihor");
+        user.setLastName("Kulpekin");
+        Role userRole = roleRepository.findByRole("SITE_USER");
+        user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+        user.setStatus("VERIFIED");
+        user.setPassword("123456789");
+
+        return user;
+    }
 
     private User defineUser(){
         User user = new User();
@@ -164,5 +204,8 @@ public class ForgotPasswordControllerTest {
         user.setRoles(new HashSet<>(Arrays.asList(userRole)));
         user.setStatus("VERIFIED");
         user.setPassword("123456789");
+
+        return user;
     }
+
 }
