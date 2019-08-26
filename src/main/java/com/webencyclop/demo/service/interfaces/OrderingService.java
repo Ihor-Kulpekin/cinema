@@ -1,10 +1,11 @@
 package com.webencyclop.demo.service.interfaces;
 
-import java.util.List;
 import com.webencyclop.demo.model.Ordering;
+
+import java.util.List;
 
 public interface OrderingService {
     void doOrdering(Ordering ordering);
-    List<Ordering> listOrdering();
+    List<Ordering> listOrderings();
     Ordering getOrderingById(int id);
 }

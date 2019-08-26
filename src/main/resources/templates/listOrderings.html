@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>All Tickets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style>
+        #headerText{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        body{
+            background-color: #ebfff2;
+        }
+        a:hover{
+            background-color: #337ab7;
+        }
+        #userPage{
+            float: right;
+            color: #337ab7;
+            margin-right: 15px;
+        }
+        #adminText{
+            text-align: center;
+            color: #337ab7;
+        }
+        #logout{
+            float: right;
+            margin-right: 25px;
+            color: #337ab7;
+        }
+        #headerButton{
+            text-align:center;
+
+        }
+        #footer{
+            font-size:30px;
+            color:green;
+            text-align:center;
+            margin-top: 40%;
+        }
+    </style>
+</head>
+<body>
+<h1 id="adminText">List of Tickets</h1>
+<header id="headerText">
+    <div id="headerButton">
+        <a href="/logout" id="logout">Logout</a>
+        <a href="/admin" id="userPage">Admin Page</a>
+    </div>
+</header>
+<div class="container my-2">
+    <div class="card">
+        <div class="card-body">
+            <div th:switch="${orderingList}" class="container my-5">
+                <div class="col-md-10">
+                    <div th:case="*">
+                        <table class="table table-striped table-responsive-md">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Id_Movie</th>
+                                <th>Id_Ticket</th>
+                                <th>Id_User</th>
+                                <th>Id_Room</th>
+                                <th>Date Ordering</th>
+                                <th>Price Ticket</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="ordering : ${orderingList}">
+                                <td th:text="${ordering.id}"></td>
+                                <td th:text="${ordering.movieId}"></td>
+                                <td th:text="${ordering.ticketId}"></td>
+                                <td th:text="${ordering.userId}"></td>
+                                <td th:text="${ordering.roomId}"></td>
+                                <td th:text="${ordering.dateOrdering}"></td>
+                                <td th:text="${ordering.sum_price_ticket}"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p id="footer">2019 year</p>
+</footer>
+</body>
+</html>

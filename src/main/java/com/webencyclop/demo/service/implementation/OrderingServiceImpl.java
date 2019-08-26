@@ -20,7 +20,7 @@ public class OrderingServiceImpl implements OrderingService {
     }
 
     @Override
-    public List<Ordering> listOrdering() {
+    public List<Ordering> listOrderings() {
         return orderingRepository.findAll();
     }
 

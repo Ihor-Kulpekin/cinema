@@ -1,7 +1,5 @@
 package com.webencyclop.demo.controller.implementation;
 
-import java.util.Date;
-import java.util.List;
 import com.webencyclop.demo.controller.interfaces.BaseOrderingController;
 import com.webencyclop.demo.model.*;
 import com.webencyclop.demo.service.interfaces.*;
@@ -10,6 +8,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Date;
+import java.util.List;
 
 @Controller
 public class OrderingController implements BaseOrderingController  {
@@ -68,4 +69,15 @@ public class OrderingController implements BaseOrderingController  {
         }
         return modelAndView;
     }
+
+    @Override
+    public ModelAndView showPageListOrderings() {
+        ModelAndView modelAndView = new ModelAndView("listOrderings");
+        List<Ordering> orderingList = orderingService.listOrderings();
+        modelAndView.addObject("orderingList",orderingList);
+        return modelAndView;
+    }
+
+
+
 }

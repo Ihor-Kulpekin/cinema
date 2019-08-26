@@ -1,23 +1,20 @@
 package com.webencyclop.demo.service.implementation;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-
+import com.webencyclop.demo.model.Role;
+import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.repository.interfaces.RoleRepository;
+import com.webencyclop.demo.repository.interfaces.UserRepository;
 import com.webencyclop.demo.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.webencyclop.demo.model.Role;
-import com.webencyclop.demo.model.User;
-import com.webencyclop.demo.repository.interfaces.RoleRepository;
-import com.webencyclop.demo.repository.interfaces.UserRepository;
-import org.springframework.test.web.servlet.MockMvc;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 
 @Service
-public class UserServiceImp implements UserService {
+public class UserServiceImp implements UserService{
 	
 	@Autowired
 	private BCryptPasswordEncoder encoder;
@@ -53,6 +50,5 @@ public class UserServiceImp implements UserService {
 	public User findUserByEmail(String email) {
 		return userRepository.findByEmail(email);
 	}
-
 
 }

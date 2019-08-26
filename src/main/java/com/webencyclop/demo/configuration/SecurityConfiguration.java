@@ -49,7 +49,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.antMatchers("/detailsMovie/{id}").permitAll()
 				.antMatchers("/register").permitAll()
 				.antMatchers("/home/**","/buyTicket").hasAuthority( "SITE_USER")
-				.antMatchers("/admin/**").hasAnyAuthority("SUPER_USER","ADMIN_USER")
+				.antMatchers("/admin/**").hasAuthority("ADMIN_USER")
 				.anyRequest().authenticated()
 				.and()
 				// form login
