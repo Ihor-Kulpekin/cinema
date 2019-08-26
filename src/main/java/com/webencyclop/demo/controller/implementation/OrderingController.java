@@ -31,19 +31,21 @@ public class OrderingController implements BaseOrderingController  {
 
 
     @Override
-    public String showPageOrdering() {
+    public ModelAndView showPageOrdering() {
         ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("doOrdering");
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.findUserByEmail(auth.getName());
         List<Movie> movieList = movieService.listMovies();
         List<Room> roomList = roomService.listRooms();
         List<Ticket> ticketList = ticketService.listTickets();
+        Ordering ordering = new Ordering();
         modelAndView.addObject("user",user);
         modelAndView.addObject("movieList",movieList);
         modelAndView.addObject("ticketList",ticketList);
         modelAndView.addObject("roomList",roomList);
-        modelAndView.addObject("ordering",new Ordering());
-        return "doOrdering";
+        modelAndView.addObject("ordering",ordering);
+        return modelAndView;
     }
 
 
@@ -56,14 +58,14 @@ public class OrderingController implements BaseOrderingController  {
             ordering.setTicketId(ordering.getTicketId());
             ordering.setUserId(user);
             ordering.setRoomId(ordering.getRoomId());
-            ordering.setSumPriceTicket(ordering.getSumPriceTicket());
+            ordering.setSum_price_ticket(ordering.getSum_price_ticket());
             ordering.setDateOrdering(new Date());
             ordering.setMovieId(ordering.getMovieId());
-            modelAndView.setViewName("index");
+            orderingService.doOrdering(ordering);
+            modelAndView.setViewName("redirect:/");
         }else {
-            modelAndView.setViewName("login");
+            modelAndView.setViewName("redirect:/error");
         }
         return modelAndView;
     }
-
 }

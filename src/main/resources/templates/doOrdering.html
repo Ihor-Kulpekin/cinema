@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Buy Ticket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         #footer{
@@ -17,8 +19,12 @@
     </style>
 </head>
 <body>
+<div class="container my-5">
     <h3>Buy Ticket</h3>
-                <form action="/home/buyTicket" th:action="@{/home/buyTicket}" th:object="${ordering}" method="post">
+    <div class="card">
+        <div class="card-body">
+            <div class="col-md-10">
+                <form action="#" th:action="@{/home/buyTicket}" th:object="${ordering}" method="post">
                               <tr>
                                   <td><label for="movieId">Movie id</label></td>
                                   <td><input th:field="${ordering.movieId.id}" type="text" id="movieId"></td>
@@ -31,9 +37,81 @@
                                   <td><label for="roomId">Room id</label></td>
                                   <td><input th:field="*{roomId}" type="text" id="roomId"></td>
                               </tr>
-                            <input type="submit" value="Submit ">
+                            <tr>
+                                  <td><label for="sumOfTicket">Sum Ticket</label></td>
+                                  <td><input th:field="*{sum_price_ticket}" type="text" id="sumOfTicket"></td>
+                            </tr>
+                            <br>
+                            <input type="submit" value="Submit">
+                    <br>
+
+                    <h3>Ticket List</h3>
+                    <table class="table table-striped table-responsive-md">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Price</th>
+                            <th>Time</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="ticket : ${ticketList}">
+                            <td th:text="${ticket.id}"></td>
+                            <td th:text="${ticket.price}"></td>
+                            <td th:text="${ticket.priceByTime}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <h3>Room List</h3>
+                    <table class="table table-striped table-responsive-md">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Number Room</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="room : ${roomList}">
+                            <td th:text="${room.id}"></td>
+                            <td th:text="${room.numberRoom}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <h3>Movie List</h3>
+                    <table class="table table-striped table-responsive-md">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>See trailer</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="movie : ${movieList}">
+                            <td th:text="${movie.id}"></td>
+                            <td th:text="${movie.nameMovie}"></td>
+                            <td>
+                                <a th:href="${movie.urlTrailer}"
+                                   class="btn btn-primary">
+                                    <i class="fas fa-user-edit ml-2"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                 </form>
+            </div>
+        </div>
+    </div>
     <footer><p id="footer">2019 year</p>
     </footer>
+</div>
 </body>
 </html>

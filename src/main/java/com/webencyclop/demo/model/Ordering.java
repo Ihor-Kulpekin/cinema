@@ -32,19 +32,19 @@ public class Ordering {
     @JoinColumn(name = "Id_Room",referencedColumnName = "Id")
     private Room roomId;
 
-    @Column(name = "SumPriceTicket")
-    private int sumPriceTicket;
+    @Column(name = "sum_price_ticket")
+    private int sum_price_ticket;
 
     public Ordering() {
     }
 
-    public Ordering(Movie movieId, Ticket ticketId, User userId, Room roomId,int sumPriceTicket) {
+    public Ordering(Movie movieId, Ticket ticketId, User userId, Room roomId,int sum_price_ticket) {
         this.movieId = movieId;
         this.ticketId = ticketId;
         this.userId = userId;
         this.roomId = roomId;
         dateOrdering = new Date();
-        this.sumPriceTicket = sumPriceTicket;
+        this.sum_price_ticket = sum_price_ticket;
     }
 
     public int getId() {
@@ -95,11 +95,11 @@ public class Ordering {
         this.roomId = roomId;
     }
 
-    public int getSumPriceTicket() {
-        return sumPriceTicket;
+    public int getSum_price_ticket() {
+        return sum_price_ticket;
     }
 
-    public void setSumPriceTicket(int sumPriceTicket) {
-        this.sumPriceTicket = sumPriceTicket;
+    public void setSum_price_ticket(int sum_price_ticket) {
+        this.sum_price_ticket = sum_price_ticket;
     }
 }
