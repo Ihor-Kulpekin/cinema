@@ -1,7 +1,7 @@
-package com.webencyclop.demo.service.interfaces;
+package com.webencyclop.demo.service.interfaces.forAdmin;
 
 import java.util.List;
-import com.webencyclop.demo.model.Room;
+import com.webencyclop.demo.model.forAdmin.Room;
 
 public interface RoomService {
     void addRoom(Room room);

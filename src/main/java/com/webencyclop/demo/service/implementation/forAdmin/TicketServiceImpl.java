@@ -1,8 +1,8 @@
-package com.webencyclop.demo.service.implementation;
+package com.webencyclop.demo.service.implementation.forAdmin;
 
-import com.webencyclop.demo.model.Ticket;
-import com.webencyclop.demo.repository.interfaces.TicketRepository;
-import com.webencyclop.demo.service.interfaces.TicketService;
+import com.webencyclop.demo.model.forAdmin.Ticket;
+import com.webencyclop.demo.repository.interfaces.forAdmin.TicketRepository;
+import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.webencyclop.demo.controller.interfaces;
+package com.webencyclop.demo.controller.interfaces.admin;
 
-import com.webencyclop.demo.model.Ticket;
+import com.webencyclop.demo.model.forAdmin.Ticket;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 

@@ -2,7 +2,13 @@ package com.webencyclop.demo.controller.implementation;
 
 import com.webencyclop.demo.controller.interfaces.BaseOrderingController;
 import com.webencyclop.demo.model.*;
+import com.webencyclop.demo.model.forAdmin.Movie;
+import com.webencyclop.demo.model.forAdmin.Room;
+import com.webencyclop.demo.model.forAdmin.Ticket;
 import com.webencyclop.demo.service.interfaces.*;
+import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
+import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
+import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

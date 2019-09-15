@@ -1,16 +1,15 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.admin;
 
-import java.util.List;
-import com.webencyclop.demo.controller.interfaces.BaseTicketController;
-import com.webencyclop.demo.model.Ticket;
-import com.webencyclop.demo.service.interfaces.TicketService;
+import com.webencyclop.demo.controller.interfaces.admin.BaseTicketController;
+import com.webencyclop.demo.model.forAdmin.Ticket;
+import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 public class TicketController implements BaseTicketController {

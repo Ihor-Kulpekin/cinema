@@ -1,8 +1,8 @@
 package com.webencyclop.demo.service.implementation;
 
 import java.util.List;
-import com.webencyclop.demo.model.Ticket;
-import com.webencyclop.demo.service.interfaces.TicketService;
+import com.webencyclop.demo.model.forAdmin.Ticket;
+import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,9 +1,8 @@
 package com.webencyclop.demo.controller.implementation;
 
-import com.sun.mail.iap.Argument;
-import com.webencyclop.demo.model.Movie;
-import com.webencyclop.demo.model.Room;
-import com.webencyclop.demo.service.interfaces.RoomService;
+import com.webencyclop.demo.controller.implementation.admin.RoomController;
+import com.webencyclop.demo.model.forAdmin.Room;
+import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

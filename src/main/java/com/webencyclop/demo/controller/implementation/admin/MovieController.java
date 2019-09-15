@@ -1,15 +1,15 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.admin;
 
-import java.util.List;
-import com.webencyclop.demo.controller.interfaces.BaseMovieController;
-import com.webencyclop.demo.model.Movie;
-import com.webencyclop.demo.service.interfaces.MovieService;
+import com.webencyclop.demo.controller.interfaces.admin.BaseMovieController;
+import com.webencyclop.demo.model.forAdmin.Movie;
+import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 public class MovieController implements BaseMovieController {

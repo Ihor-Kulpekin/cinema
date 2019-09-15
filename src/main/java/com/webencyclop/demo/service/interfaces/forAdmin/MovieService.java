@@ -1,6 +1,6 @@
-package com.webencyclop.demo.service.interfaces;
+package com.webencyclop.demo.service.interfaces.forAdmin;
 
-import com.webencyclop.demo.model.Movie;
+import com.webencyclop.demo.model.forAdmin.Movie;
 
 import java.util.List;
 

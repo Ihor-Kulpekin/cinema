@@ -1,8 +1,8 @@
 package com.webencyclop.demo.service.implementation;
 
 import java.util.List;
-import com.webencyclop.demo.model.Movie;
-import com.webencyclop.demo.service.interfaces.MovieService;
+import com.webencyclop.demo.model.forAdmin.Movie;
+import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

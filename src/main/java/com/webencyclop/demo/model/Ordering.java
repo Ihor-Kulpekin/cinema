@@ -1,5 +1,9 @@
 package com.webencyclop.demo.model;
 
+import com.webencyclop.demo.model.forAdmin.Movie;
+import com.webencyclop.demo.model.forAdmin.Room;
+import com.webencyclop.demo.model.forAdmin.Ticket;
+
 import javax.persistence.*;
 import java.util.Date;
 

@@ -1,9 +1,9 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.admin;
 
 import java.util.List;
-import com.webencyclop.demo.controller.interfaces.BaseRoomController;
-import com.webencyclop.demo.model.Room;
-import com.webencyclop.demo.service.interfaces.RoomService;
+import com.webencyclop.demo.controller.interfaces.admin.BaseRoomController;
+import com.webencyclop.demo.model.forAdmin.Room;
+import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

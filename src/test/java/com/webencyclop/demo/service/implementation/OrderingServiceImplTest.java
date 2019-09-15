@@ -2,6 +2,9 @@ package com.webencyclop.demo.service.implementation;
 
 import com.webencyclop.demo.model.Ordering;
 import com.webencyclop.demo.service.interfaces.*;
+import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
+import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
+import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

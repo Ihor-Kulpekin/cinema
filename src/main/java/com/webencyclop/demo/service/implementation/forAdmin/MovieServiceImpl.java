@@ -1,8 +1,8 @@
-package com.webencyclop.demo.service.implementation;
+package com.webencyclop.demo.service.implementation.forAdmin;
 
-import com.webencyclop.demo.model.Movie;
-import com.webencyclop.demo.repository.interfaces.MovieRepository;
-import com.webencyclop.demo.service.interfaces.MovieService;
+import com.webencyclop.demo.model.forAdmin.Movie;
+import com.webencyclop.demo.repository.interfaces.forAdmin.MovieRepository;
+import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
