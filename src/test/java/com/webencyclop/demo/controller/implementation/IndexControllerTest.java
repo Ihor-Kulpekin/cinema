@@ -2,6 +2,8 @@ package com.webencyclop.demo.controller.implementation;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.webencyclop.demo.controller.implementation.forUser.IndexController;
 import com.webencyclop.demo.model.forAdmin.Movie;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import org.junit.Before;

@@ -1,9 +1,10 @@
 package com.webencyclop.demo.controller.implementation;
 
+import com.webencyclop.demo.controller.implementation.forUser.AuthenticationController;
 import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
 import com.webencyclop.demo.repository.interfaces.RoleRepository;
-import com.webencyclop.demo.service.interfaces.UserService;
+import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +13,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;

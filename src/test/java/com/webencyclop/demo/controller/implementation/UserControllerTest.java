@@ -2,9 +2,11 @@ package com.webencyclop.demo.controller.implementation;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.webencyclop.demo.controller.implementation.forUser.UserController;
 import com.webencyclop.demo.model.User;
 import com.webencyclop.demo.repository.interfaces.RoleRepository;
-import com.webencyclop.demo.service.interfaces.UserService;
+import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

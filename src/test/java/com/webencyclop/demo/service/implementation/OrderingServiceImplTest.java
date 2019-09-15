@@ -1,10 +1,11 @@
 package com.webencyclop.demo.service.implementation;
 
 import com.webencyclop.demo.model.Ordering;
-import com.webencyclop.demo.service.interfaces.*;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
+import com.webencyclop.demo.service.interfaces.forUser.OrderingService;
+import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +16,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -55,22 +55,6 @@ public class OrderingServiceImplTest {
 
         assertEquals(exceptedOrdering.getId(),resultOrdering.getId());
     }
-
-    @Test
-    public void listOrderingsTest() {
-        List<Ordering> orderingList = orderingService.listOrderings();
-        long sizeList = orderingList.size();
-        assertEquals(orderingService.listOrderings().size(),sizeList);
-    }
-
-    @Test
-    public void getOrderingByIdTest() {
-        List<Ordering> orderingList = orderingService.listOrderings();
-        Ordering orderingFromList = orderingList.get(0);
-        Ordering orderingGotByID = orderingService.getOrderingById(orderingFromList.getId());
-        assertEquals(exceptedOrdering.getId(),orderingGotByID.getId());
-    }
-
 
     private Ordering defineExceptedOrderingTest(){
         exceptedOrdering = new Ordering();

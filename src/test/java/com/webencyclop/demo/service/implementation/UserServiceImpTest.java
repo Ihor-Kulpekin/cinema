@@ -4,7 +4,7 @@ import com.webencyclop.demo.model.MasterCard;
 import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
 import com.webencyclop.demo.repository.interfaces.RoleRepository;
-import com.webencyclop.demo.service.interfaces.UserService;
+import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

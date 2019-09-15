@@ -1,5 +1,6 @@
 package com.webencyclop.demo.controller.implementation;
 
+import com.webencyclop.demo.controller.implementation.forUser.ForgotPasswordController;
 import com.webencyclop.demo.model.ConfirmationToken;
 import com.webencyclop.demo.model.MailMessage;
 import com.webencyclop.demo.model.Role;
@@ -7,7 +8,7 @@ import com.webencyclop.demo.model.User;
 import com.webencyclop.demo.repository.interfaces.RoleRepository;
 import com.webencyclop.demo.service.interfaces.ConfirmationTokenService;
 import com.webencyclop.demo.service.interfaces.EmailSenderService;
-import com.webencyclop.demo.service.interfaces.UserService;
+import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

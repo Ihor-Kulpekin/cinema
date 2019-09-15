@@ -1,11 +1,13 @@
 package com.webencyclop.demo.controller.implementation;
 
+import com.webencyclop.demo.controller.implementation.forUser.OrderingController;
 import com.webencyclop.demo.model.Ordering;
 import com.webencyclop.demo.repository.interfaces.RoleRepository;
-import com.webencyclop.demo.service.interfaces.*;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
+import com.webencyclop.demo.service.interfaces.forUser.OrderingService;
+import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -75,11 +77,6 @@ public class OrderingControllerTest {
     @Test
     public void buyTicketTest() {
     }
-
-    @Test
-    public void showPageListOrderingsTest() {
-    }
-
 
     private Ordering defineExceptedOrderingTest(){
         exceptedOrdering = new Ordering();
