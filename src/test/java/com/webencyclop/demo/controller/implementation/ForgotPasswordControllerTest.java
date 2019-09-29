@@ -5,9 +5,9 @@ import com.webencyclop.demo.model.ConfirmationToken;
 import com.webencyclop.demo.model.MailMessage;
 import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
-import com.webencyclop.demo.repository.interfaces.RoleRepository;
-import com.webencyclop.demo.service.interfaces.ConfirmationTokenService;
-import com.webencyclop.demo.service.interfaces.EmailSenderService;
+import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
+import com.webencyclop.demo.service.interfaces.forUser.ConfirmationTokenService;
+import com.webencyclop.demo.service.interfaces.forUser.EmailSenderService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +24,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.View;
 
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 
 import static org.hamcrest.beans.HasProperty.hasProperty;
@@ -100,7 +100,7 @@ public class ForgotPasswordControllerTest {
         user.setLastName("Kulpekin");
         user.setEmail("ihor.kulpekin@gmail.com");
         Role userRole = roleRepository.findByRole("SITE_USER");
-        user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+        user.setRoles(new HashSet<>(Collections.singletonList(userRole)));
         user.setStatus("VERIFIED");
         user.setPassword("123456789");
         doNothing().when(userService).saveUser(user);
@@ -172,7 +172,7 @@ public class ForgotPasswordControllerTest {
         user.setName("Ihor");
         user.setLastName("Kulpekin");
         Role userRole = roleRepository.findByRole("SITE_USER");
-        user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+        user.setRoles(new HashSet<>(Collections.singletonList(userRole)));
         user.setStatus("VERIFIED");
         user.setPassword("123456789");
 
@@ -186,7 +186,7 @@ public class ForgotPasswordControllerTest {
         user.setLastName("Kulpekin");
         user.setEmail("ihor.kulpekin@gmail.com");
         Role userRole = roleRepository.findByRole("SITE_USER");
-        user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+        user.setRoles(new HashSet<>(Collections.singletonList(userRole)));
         user.setStatus("VERIFIED");
         user.setPassword("123456789");
 

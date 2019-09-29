@@ -4,8 +4,8 @@ import com.webencyclop.demo.controller.interfaces.forUser.BaseForgotPasswordCont
 import com.webencyclop.demo.model.ConfirmationToken;
 import com.webencyclop.demo.model.MailMessage;
 import com.webencyclop.demo.model.User;
-import com.webencyclop.demo.service.interfaces.ConfirmationTokenService;
-import com.webencyclop.demo.service.interfaces.EmailSenderService;
+import com.webencyclop.demo.service.interfaces.forUser.ConfirmationTokenService;
+import com.webencyclop.demo.service.interfaces.forUser.EmailSenderService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -15,17 +15,21 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ForgotPasswordController implements BaseForgotPasswordController {
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
+
+    private final EmailSenderService emailSenderService;
+
+    private final ConfirmationTokenService confirmationTokenService;
+
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
-    private EmailSenderService emailSenderService;
-
-    @Autowired
-    private ConfirmationTokenService confirmationTokenService;
-
-    @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    public ForgotPasswordController(UserService userService, EmailSenderService emailSenderService, ConfirmationTokenService confirmationTokenService, BCryptPasswordEncoder bCryptPasswordEncoder) {
+        this.userService = userService;
+        this.emailSenderService = emailSenderService;
+        this.confirmationTokenService = confirmationTokenService;
+        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+    }
 
     @Override
     public ModelAndView showForgotPasswordPage(User user) {

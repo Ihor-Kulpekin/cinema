@@ -1,4 +1,4 @@
-package com.webencyclop.demo.service.interfaces;
+package com.webencyclop.demo.service.interfaces.forUser;
 
 import com.webencyclop.demo.model.MailMessage;
 

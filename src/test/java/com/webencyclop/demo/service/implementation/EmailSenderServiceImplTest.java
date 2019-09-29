@@ -2,7 +2,7 @@ package com.webencyclop.demo.service.implementation;
 
 import com.webencyclop.demo.model.MailMessage;
 import com.webencyclop.demo.model.SmtpServerRule;
-import com.webencyclop.demo.service.interfaces.EmailSenderService;
+import com.webencyclop.demo.service.interfaces.forUser.EmailSenderService;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -28,7 +28,7 @@ public class EmailSenderServiceImplTest {
     public SmtpServerRule smtpServerRule = new SmtpServerRule(2525);
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
     }
 
     @Test

@@ -1,8 +1,8 @@
-package com.webencyclop.demo.service.implementation;
+package com.webencyclop.demo.service.implementation.forUser;
 
 import com.webencyclop.demo.model.MailMessage;
-import com.webencyclop.demo.repository.interfaces.EmailSenderRepository;
-import com.webencyclop.demo.service.interfaces.EmailSenderService;
+import com.webencyclop.demo.repository.interfaces.forUser.EmailSenderRepository;
+import com.webencyclop.demo.service.interfaces.forUser.EmailSenderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

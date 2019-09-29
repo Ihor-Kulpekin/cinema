@@ -1,4 +1,4 @@
-package com.webencyclop.demo.repository.interfaces;
+package com.webencyclop.demo.repository.interfaces.forUser;
 
 import com.webencyclop.demo.model.ConfirmationToken;
 import org.springframework.data.repository.CrudRepository;

@@ -3,7 +3,7 @@ package com.webencyclop.demo.controller.implementation;
 import com.webencyclop.demo.controller.implementation.forUser.AuthenticationController;
 import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
-import com.webencyclop.demo.repository.interfaces.RoleRepository;
+import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,15 +21,17 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.View;
 
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.hamcrest.beans.HasProperty.hasProperty;
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.verify;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 
 @Rollback
@@ -120,7 +122,7 @@ public class AuthenticationControllerTest {
         user.setLastName("Kulpekin");
         user.setEmail("ihor.kulpekin@gmail.com");
         Role userRole = roleRepository.findByRole("SITE_USER");
-        user.setRoles(new HashSet<>(Arrays.asList(userRole)));
+        user.setRoles(new HashSet<>(Collections.singletonList(userRole)));
         user.setStatus("VERIFIED");
         user.setPassword("123456789");
         doNothing().when(userService).saveUser(user);

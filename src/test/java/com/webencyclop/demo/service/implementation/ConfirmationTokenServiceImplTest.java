@@ -4,8 +4,8 @@ import com.webencyclop.demo.model.ConfirmationToken;
 import com.webencyclop.demo.model.MasterCard;
 import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
-import com.webencyclop.demo.repository.interfaces.RoleRepository;
-import com.webencyclop.demo.service.interfaces.ConfirmationTokenService;
+import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
+import com.webencyclop.demo.service.interfaces.forUser.ConfirmationTokenService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,11 +17,12 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -57,7 +58,7 @@ public class ConfirmationTokenServiceImplTest {
         expectedUser.setPassword(encoder.encode("1234567"));
         expectedUser.setStatus("VERIFIED");
         Role userRole = roleRepository.findByRole("SITE_USER");
-        expectedUser.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
+        expectedUser.setRoles(new HashSet<>(Collections.singletonList(userRole)));
         expectedUser.setLastName("Kulpekin");
         expectedUser.setEmail("kulpekin12@gmail.com");
         expectedMasterCard = new MasterCard();

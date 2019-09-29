@@ -3,7 +3,7 @@ package com.webencyclop.demo.service.implementation;
 import com.webencyclop.demo.model.MasterCard;
 import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
-import com.webencyclop.demo.repository.interfaces.RoleRepository;
+import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +14,7 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 
 import static org.junit.Assert.*;
@@ -49,7 +49,7 @@ public class UserServiceImpTest {
         expectedUser.setName("Ihor");
         expectedUser.setLastName("Kulpekin");
         Role userRole = roleRepository.findByRole("SITE_USER");
-        expectedUser.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
+        expectedUser.setRoles(new HashSet<>(Collections.singletonList(userRole)));
     }
 
     @Test

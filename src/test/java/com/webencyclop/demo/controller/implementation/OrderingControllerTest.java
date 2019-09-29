@@ -2,7 +2,7 @@ package com.webencyclop.demo.controller.implementation;
 
 import com.webencyclop.demo.controller.implementation.forUser.OrderingController;
 import com.webencyclop.demo.model.Ordering;
-import com.webencyclop.demo.repository.interfaces.RoleRepository;
+import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
@@ -61,7 +61,7 @@ public class OrderingControllerTest {
     private Ordering exceptedOrdering;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         MockitoAnnotations.initMocks(this);
             mockMvc = MockMvcBuilders
                     .standaloneSetup(orderingController)
@@ -71,7 +71,7 @@ public class OrderingControllerTest {
     }
 
     @Test
-    public void showPageOrderingTest() throws Exception {
+    public void showPageOrderingTest()  {
     }
 
     @Test
