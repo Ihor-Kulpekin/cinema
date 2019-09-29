@@ -6,31 +6,15 @@
     <option name="showLibraryBeans" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abf30ba2-56cd-47a9-8514-564edde9d11a" name="Default Changelist" comment="added function &quot;history of user's orderings&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserHistoryOrderingsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forUser/UserHistoryOrderingsService.java" afterDir="false" />
+    <list default="true" id="abf30ba2-56cd-47a9-8514-564edde9d11a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/UserHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/forUser/BaseUserHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/showPageUserHistoryOrdering.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/ForgotPasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/ForgotPasswordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/implementation/EmailSenderRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/implementation/EmailSenderRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/implementation/forUser/UserHistoryOrderingsRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/ConfirmationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forUser/ConfirmationTokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/EmailSenderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forUser/EmailSenderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forUser/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forUser/UserHistoryOrderingsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forUser/UserHistoryOrderingsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/ConfirmationTokenServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/ConfirmationTokenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/ConfirmationTokenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/EmailSenderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/ConfirmationTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forUser/ConfirmationTokenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/EmailSenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forUser/EmailSenderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/AuthenticationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/AuthenticationControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/OrderingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/OrderingControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/ConfirmationTokenServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/ConfirmationTokenServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/UserServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/UserServiceImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserHistoryOrderingsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserHistoryOrderingsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,10 +59,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserHistoryOrderingsServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/OrderingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+            <state relative-caret-position="170">
+              <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,83 +70,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/ConfirmationTokenServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/OrderingControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="174" column="57" lean-forward="true" selection-start-line="174" selection-start-column="57" selection-end-line="174" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/AuthenticationControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Ordering.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="124" column="59" lean-forward="true" selection-start-line="124" selection-start-column="59" selection-end-line="124" selection-end-column="59" />
+            <state relative-caret-position="125">
+              <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+              <folding>
+                <element signature="e#2261#2262#0" expanded="true" />
+                <element signature="e#2300#2301#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserServiceImp.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+            <state relative-caret-position="238">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/ForgotPasswordController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/AuthenticationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/EmailSenderServiceImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/UserServiceImpTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/ConfirmationTokenServiceImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+            <state relative-caret-position="238">
+              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -174,10 +108,10 @@
       <list>
         <option value="CSS File" />
         <option value="Tag Library Descriptor" />
-        <option value="HTML File" />
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -198,16 +132,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/service/implementation/MovieServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/buyTicket.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/doOrdering.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Ordering.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseOrderingController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/listOrdering.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/listOrderings.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/configuration/SecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/OrderingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/BaseUserController.java" />
@@ -239,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/implementation/forUser/UserHistoryOrderingsRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forUser/UserHistoryOrderingsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forUser/UserHistoryOrderingsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserHistoryOrderingsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/ConfirmationTokenServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/ForgotPasswordController.java" />
@@ -249,6 +177,12 @@
         <option value="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/OrderingControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/AuthenticationControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/forUser/BaseUserHistoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserHistoryOrderingsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/UserHistoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/showPageUserHistoryOrdering.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/AuthenticationController.java" />
       </list>
     </option>
   </component>
@@ -329,7 +263,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
@@ -338,7 +272,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="implementation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -348,58 +282,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="implementation" type="462c0819:PsiDirectoryNode" />
-              <item name="forUser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-              <item name="forUser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="implementation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="implementation" type="462c0819:PsiDirectoryNode" />
               <item name="forUser" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -409,6 +292,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -429,7 +320,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569731060572" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569732934689" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -471,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderingServiceImplTest.doOrderingTest">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration name="DemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -639,7 +530,7 @@
       <workItem from="1568546402444" duration="4579000" />
       <workItem from="1568575364870" duration="18000" />
       <workItem from="1569094517749" duration="481000" />
-      <workItem from="1569729536510" duration="1650000" />
+      <workItem from="1569729536510" duration="3371000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1565181961913</created>
@@ -760,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568550933537</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added function &quot;history of user's orderings&quot;">
+      <created>1569731221112</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1569731221112</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -796,7 +694,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232701000" />
+    <option name="totallyTimeSpent" value="234422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,10 +717,10 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Learn" order="6" weight="0.3290469" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.49546143" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" visible="true" weight="0.28214827" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3535188" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.4762684" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.4762684" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -832,7 +730,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.44026187" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.2487725" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.2487725" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="14" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.3289689" />
@@ -948,48 +846,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="added function &quot;history of user's orderings&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forAdmin/MovieRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forAdmin/RoomRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/repository/interfaces/forAdmin/TicketRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forAdmin/MovieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forAdmin/RoomService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forAdmin/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forAdmin/HistoryOrderingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1055,13 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/forUser/BaseUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/forUser/BaseIndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1087,13 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/AuthenticationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1142,16 +984,6 @@
           <folding>
             <element signature="e#810#811#0" expanded="true" />
             <element signature="e#862#863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/forUser/BaseOrderingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1215,37 +1047,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forUser/UserHistoryOrderingsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/EmailSenderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/OrderingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="45" column="64" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="45" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1265,30 +1070,6 @@
             <element signature="e#651#652#0" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserHistoryOrderingsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/ConfirmationTokenServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1320,13 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/OrderingControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/ForgotPasswordControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -1338,6 +1112,142 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="124" column="59" lean-forward="true" selection-start-line="124" selection-start-column="59" selection-end-line="124" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/webencyclop/demo/controller/implementation/OrderingControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/ConfirmationTokenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/forUser/BaseUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/forUser/BaseOrderingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/interfaces/forUser/BaseUserHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/interfaces/forUser/UserHistoryOrderingsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listTickets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/showPageUserHistoryOrdering.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/UserHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/service/implementation/forUser/UserHistoryOrderingsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/AuthenticationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/controller/implementation/forUser/OrderingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webencyclop/demo/model/Ordering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+          <folding>
+            <element signature="e#2261#2262#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

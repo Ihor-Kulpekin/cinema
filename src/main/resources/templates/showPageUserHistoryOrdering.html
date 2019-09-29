@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> User's History of Ordering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+<body>
+<div class="container my-2">
+    <div class="card">
+        <div class="card-body">
+            <div th:switch="${listOrderingsByUserId}" class="container my-5">
+                <div class="col-md-10">
+                    <div th:case="*">
+                        <table class="table table-striped table-responsive-md">
+                            <thead>
+                            <tr>
+                                <th>Id Movie</th>
+                                <th>Id Ticket</th>
+                                <th>Id User</th>
+                                <th>Id Room</th>
+                                <th>Date Ordering</th>
+                                <th>Sum Price ticket</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="ordering : ${listOrderingsByUserId}">
+                                <td th:text="${ordering.movieId}"></td>
+                                <td th:text="${ordering.ticketId}"></td>
+                                <td th:text="${ordering.userId}"></td>
+                                <td th:text="${ordering.roomId}"></td>
+                                <td th:text="${ordering.dateOrdering}"></td>
+                                <td th:text="${ordering.sum_price_ticket}"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

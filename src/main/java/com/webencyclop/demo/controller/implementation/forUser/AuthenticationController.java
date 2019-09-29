@@ -60,9 +60,6 @@ public class AuthenticationController implements BaseAuthenticationController {
 			modelAndView.addObject("successMessage", "Please correct the errors in form!");
 			modelMap.addAttribute("bindingResult", bindingResult);
 		}
-		else if(userService.isUserAlreadyPresent(user)){
-			modelAndView.addObject("successMessage", "user already exists!");			
-		}
 		// we will save the user if, no binding errors
 		else {
 			userService.saveUser(user);
