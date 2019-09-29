@@ -1,6 +1,5 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.forUser;
 
-import com.webencyclop.demo.controller.implementation.forUser.ForgotPasswordController;
 import com.webencyclop.demo.model.ConfirmationToken;
 import com.webencyclop.demo.model.MailMessage;
 import com.webencyclop.demo.model.Role;
@@ -70,7 +69,7 @@ public class ForgotPasswordControllerTest {
     private User user;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
         MockitoAnnotations.initMocks(this);
         mockMvc = MockMvcBuilders
                 .standaloneSetup(forgotPasswordController)
@@ -93,7 +92,7 @@ public class ForgotPasswordControllerTest {
 
     //There is an error in execution test
     @Test
-    public void processForgotPasswordTest() throws Exception {
+    public void processForgotPasswordTest(){
         user = new User();
         user.setId(1);
         user.setName("Ihor");

@@ -1,7 +1,8 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
 import com.webencyclop.demo.controller.interfaces.forUser.BaseOrderingController;
-import com.webencyclop.demo.model.*;
+import com.webencyclop.demo.model.Ordering;
+import com.webencyclop.demo.model.User;
 import com.webencyclop.demo.model.forAdmin.Movie;
 import com.webencyclop.demo.model.forAdmin.Room;
 import com.webencyclop.demo.model.forAdmin.Ticket;
@@ -22,20 +23,24 @@ import java.util.List;
 @Controller
 public class OrderingController implements BaseOrderingController  {
 
-    @Autowired
-    private OrderingService orderingService;
+    private final OrderingService orderingService;
+    private final TicketService ticketService;
+    private final MovieService movieService;
+    private final UserService userService;
+    private final RoomService roomService;
 
     @Autowired
-    private TicketService ticketService;
-
-    @Autowired
-    private MovieService movieService;
-
-    @Autowired
-    private UserService userService;
-
-    @Autowired
-    private RoomService roomService;
+    public OrderingController(OrderingService orderingService,
+                              TicketService ticketService,
+                              MovieService movieService,
+                              UserService userService,
+                              RoomService roomService) {
+        this.orderingService = orderingService;
+        this.ticketService = ticketService;
+        this.movieService = movieService;
+        this.userService = userService;
+        this.roomService = roomService;
+    }
 
 
     @Override

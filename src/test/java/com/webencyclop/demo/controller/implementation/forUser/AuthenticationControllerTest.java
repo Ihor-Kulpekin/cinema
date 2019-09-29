@@ -1,4 +1,4 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.forUser;
 
 import com.webencyclop.demo.controller.implementation.forUser.AuthenticationController;
 import com.webencyclop.demo.model.Role;

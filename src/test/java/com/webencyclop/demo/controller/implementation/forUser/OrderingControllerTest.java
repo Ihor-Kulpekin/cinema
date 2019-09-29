@@ -1,6 +1,5 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.forUser;
 
-import com.webencyclop.demo.controller.implementation.forUser.OrderingController;
 import com.webencyclop.demo.model.Ordering;
 import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
@@ -71,7 +70,8 @@ public class OrderingControllerTest {
     }
 
     @Test
-    public void showPageOrderingTest()  {
+    public void showPageOrderingTest(){
+
     }
 
     @Test

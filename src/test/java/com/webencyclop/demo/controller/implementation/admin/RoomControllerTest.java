@@ -1,6 +1,5 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.admin;
 
-import com.webencyclop.demo.controller.implementation.admin.RoomController;
 import com.webencyclop.demo.model.forAdmin.Room;
 import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import org.junit.Before;
@@ -22,12 +21,13 @@ import org.springframework.web.servlet.View;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.hamcrest.core.IsInstanceOf.instanceOf;
 import static org.hamcrest.beans.HasProperty.hasProperty;
+import static org.hamcrest.core.IsInstanceOf.instanceOf;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @Rollback
 @Transactional
@@ -50,7 +50,7 @@ public class RoomControllerTest {
     private Room expectedRoom;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
         MockitoAnnotations.initMocks(this);
         mockMvc = MockMvcBuilders
                 .standaloneSetup(roomController)

@@ -1,4 +1,4 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.forUser;
 
 import java.util.ArrayList;
 import java.util.List;

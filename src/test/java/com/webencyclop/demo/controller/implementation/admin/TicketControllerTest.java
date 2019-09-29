@@ -1,9 +1,5 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.admin;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.webencyclop.demo.controller.implementation.admin.TicketController;
 import com.webencyclop.demo.model.forAdmin.Ticket;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
 import org.junit.Before;
@@ -23,12 +19,16 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.View;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.hamcrest.core.IsInstanceOf.instanceOf;
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.hamcrest.beans.HasProperty.hasProperty;
+import static org.hamcrest.core.IsInstanceOf.instanceOf;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @Transactional
 @Rollback
@@ -50,7 +50,7 @@ public class TicketControllerTest {
     private Ticket expectedTicket;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
         MockitoAnnotations.initMocks(this);
         mockMvc = MockMvcBuilders
                 .standaloneSetup(ticketController)

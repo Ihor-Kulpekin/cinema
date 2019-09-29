@@ -1,6 +1,5 @@
-package com.webencyclop.demo.controller.implementation;
+package com.webencyclop.demo.controller.implementation.admin;
 
-import com.webencyclop.demo.controller.implementation.admin.MovieController;
 import com.webencyclop.demo.model.forAdmin.Movie;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import org.junit.Before;
@@ -53,7 +52,7 @@ public class MovieControllerTest {
 
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp()  {
         MockitoAnnotations.initMocks(this);
         mockMvc = MockMvcBuilders
                 .standaloneSetup(movieController)
