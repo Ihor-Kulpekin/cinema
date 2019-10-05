@@ -15,6 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class AuthenticationController implements BaseAuthenticationController {
@@ -41,7 +43,12 @@ public class AuthenticationController implements BaseAuthenticationController {
 	@Override
 	public ModelAndView home() {
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("home"); // resources/template/home.html
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		User userId = userService.findUserByEmail(auth.getName());
+		List<User> currentUser = new ArrayList<>();
+		currentUser.add(userId);
+		modelAndView.setViewName("home");
+		modelAndView.addObject("currentUser",currentUser);
 		return modelAndView;
 	}
 

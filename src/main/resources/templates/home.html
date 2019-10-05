@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1">
     <title>User page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <style>
         #userText{
             text-align: center;
@@ -47,6 +49,10 @@
             color:#337ab7;
             margin-right: 15px;
         }
+        .leftBlock{
+            float: left;
+            margin-top: 10%;
+        }
     </style>
 </head>
 <body>
@@ -60,6 +66,30 @@
         <a href="/" id="home">Home</a>
     </div>
 </header>
+    <div class="leftBlock">
+        <div class="col-md-10">
+                <table class="table table-striped table-responsive-md">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Last Name</th>
+                        <th>Status</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="user : ${currentUser}">
+                        <td th:text="${user.name}"></td>
+                        <td th:text="${user.lastName}"></td>
+                        <td th:text="${user.status}"></td>
+                        <td th:text="${user.email}"></td>
+                        <td th:text="${user.password}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
 <footer>
     <p id="footer">2019 year</p>
 </footer>

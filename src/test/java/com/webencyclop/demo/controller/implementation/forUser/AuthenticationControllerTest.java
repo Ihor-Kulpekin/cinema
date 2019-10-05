@@ -1,6 +1,5 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
-import com.webencyclop.demo.controller.implementation.forUser.AuthenticationController;
 import com.webencyclop.demo.model.Role;
 import com.webencyclop.demo.model.User;
 import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
@@ -92,6 +91,16 @@ public class AuthenticationControllerTest {
     @Test
     public void homeTest() throws Exception {
         String urlStatus = "/home";
+        user = new User();
+        user.setId(1);
+        user.setName("Ihor");
+        user.setLastName("Kulpekin");
+        user.setEmail("ihor.kulpekin@gmail.com");
+        Role userRole = roleRepository.findByRole("SITE_USER");
+        user.setRoles(new HashSet<>(Collections.singletonList(userRole)));
+        user.setStatus("VERIFIED");
+        user.setPassword("123456789");
+        doNothing().when(userService).saveUser(user);
         MvcResult mvcResult = mockMvc.perform(get(urlStatus))
                 .andExpect(status().isOk())
                 .andExpect(view().name("home"))
