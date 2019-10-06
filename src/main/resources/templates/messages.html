@@ -55,6 +55,21 @@
             color:#337ab7;
             margin-right: 15px;
         }
+        .linkLeftMenu{
+            float: left;
+            position: relative;
+        }
+        #inbox{
+            font-size: 35px;
+            color:#337ab7;
+            position: absolute;
+        }
+        #sent{
+            font-size: 35px;
+            color:#337ab7;
+            margin-top: 45px;
+            position: absolute;
+        }
     </style>
 </head>
 <body>
@@ -64,10 +79,14 @@
         <a href="/logout" id="logout">Logout</a>
         <a href="/home" id="userPage">User Page</a>
         <a href="/home/userHistoryOrdering" id="historyOrderings">History of Orderings</a>
-        <a href="" id="messages">Messages</a>
+        <a href="/home/messages" id="messages">Messages</a>
         <a href="/" id="home">Home</a>
     </div>
 </header>
+<div class="linkLeftMenu">
+    <a id="inbox">Inbox</a>
+    <a id="sent">Sent</a>
+</div>
 <div class="container my-2">
     <div class="card">
         <div class="card-body">
