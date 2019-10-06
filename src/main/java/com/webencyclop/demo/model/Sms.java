@@ -13,19 +13,19 @@ public class Sms {
     @Column(name = "Id")
     private int id;
 
-    @Column(name = "Froms")
+    @Column(name = "froms")
     private String froms;
 
-    @Column(name = "Tos")
+    @Column(name = "tos")
     private String tos;
 
-    @Column(name = "Subjects")
+    @Column(name = "subjects")
     private String subjects;
 
-    @Column(name = "Contents")
+    @Column(name = "contents")
     private String contents;
 
-    @Column(name = "DateGettingMessage")
+    @Column(name = "date_getting_message")
     private Date dateGettingMessage;
 
     public int getId() {
