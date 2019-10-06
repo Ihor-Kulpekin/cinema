@@ -6,5 +6,5 @@ import org.springframework.web.servlet.ModelAndView;
 @FunctionalInterface
 public interface BaseMessageController {
     @GetMapping(value = "/home/messages")
-    ModelAndView homePage();
+    ModelAndView messagePage();
 }

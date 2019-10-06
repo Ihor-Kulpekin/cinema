@@ -27,7 +27,7 @@ public class MessageController implements BaseMessageController {
     }
 
     @Override
-    public ModelAndView homePage() {
+    public ModelAndView messagePage() {
 
         ModelAndView modelAndView = new ModelAndView();
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
