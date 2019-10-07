@@ -1,7 +1,7 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
-import com.webencyclop.demo.model.Role;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.model.forUser.Role;
+import com.webencyclop.demo.model.forUser.User;
 import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;

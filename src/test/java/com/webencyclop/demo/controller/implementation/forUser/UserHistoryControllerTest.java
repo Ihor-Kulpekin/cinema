@@ -1,13 +1,13 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
-import com.webencyclop.demo.model.Ordering;
-import com.webencyclop.demo.model.Role;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.model.forUser.Ordering;
+import com.webencyclop.demo.model.forUser.Role;
+import com.webencyclop.demo.model.forUser.User;
 import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
-import com.webencyclop.demo.service.interfaces.forUser.OrderingService;
+import com.webencyclop.demo.service.interfaces.forUser.ordering.OrderingService;
 import com.webencyclop.demo.service.interfaces.forUser.UserHistoryOrderingsService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;

@@ -1,10 +1,10 @@
 package com.webencyclop.demo.service.implementation;
 
-import com.webencyclop.demo.model.Ordering;
+import com.webencyclop.demo.model.forUser.Ordering;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
-import com.webencyclop.demo.service.interfaces.forUser.OrderingService;
+import com.webencyclop.demo.service.interfaces.forUser.ordering.OrderingService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;

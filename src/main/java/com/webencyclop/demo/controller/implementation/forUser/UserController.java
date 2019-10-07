@@ -1,7 +1,7 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
 import com.webencyclop.demo.controller.interfaces.forUser.BaseUserController;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.model.forUser.User;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,8 +12,12 @@ import java.util.List;
 @Controller
 public class UserController implements BaseUserController {
 
+    private final UserService userService;
+
     @Autowired
-    private UserService userService;
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public ModelAndView showPageResetPassword() {

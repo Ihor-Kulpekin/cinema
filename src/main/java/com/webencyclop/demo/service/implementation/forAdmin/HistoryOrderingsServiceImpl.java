@@ -1,6 +1,6 @@
 package com.webencyclop.demo.service.implementation.forAdmin;
 
-import com.webencyclop.demo.model.Ordering;
+import com.webencyclop.demo.model.forUser.Ordering;
 import com.webencyclop.demo.repository.interfaces.forAdmin.HistoryOrderingsRepository;
 import com.webencyclop.demo.service.interfaces.forAdmin.HistoryOrderingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +11,12 @@ import java.util.List;
 @Service
 public class HistoryOrderingsServiceImpl implements HistoryOrderingService {
 
+    private final HistoryOrderingsRepository historyOrderingsRepository;
+
     @Autowired
-    private HistoryOrderingsRepository historyOrderingsRepository;
+    public HistoryOrderingsServiceImpl(HistoryOrderingsRepository historyOrderingsRepository) {
+        this.historyOrderingsRepository = historyOrderingsRepository;
+    }
 
     @Override
     public List<Ordering> listHistoryOrderings() {

@@ -1,9 +1,7 @@
 package com.webencyclop.demo.repository.implementation;
 
-import com.webencyclop.demo.model.ConfirmationToken;
-import com.webencyclop.demo.model.MailMessage;
-import com.webencyclop.demo.model.SmtpServerRule;
-import org.junit.Before;
+import com.webencyclop.demo.model.resetPassword.MailMessage;
+import com.webencyclop.demo.model.resetPassword.SmtpServerRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,10 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-
-import java.io.IOException;
 
 import static org.junit.Assert.*;
 

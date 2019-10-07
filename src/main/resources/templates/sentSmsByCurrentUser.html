@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style>
+        #userText{
+            text-align: center;
+            color:honeydew;
+        }
+        #logout{
+            float: right;
+            margin-right: 25px;
+            color:#337ab7;
+        }
+        #headerButton{
+            margin-bottom:20px;
+            text-align:center;
+        }
+        #headerStyle{
+            background-color: dodgerblue;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        body{
+            background-color: #ebfff2;
+        }
+        a:hover{
+            background-color: #337ab7;
+        }
+        #userPage{
+            float: right;
+            color:#337ab7;
+            margin-right: 15px;
+        }
+        #footer{
+            font-size:30px;
+            color:#337ab7;
+            text-align:center;
+            margin-top: 40%;
+        }
+        #home{
+            float: left;
+            color:#337ab7;
+        }
+        #historyOrderings{
+            float: right;
+            color:#337ab7;
+            margin-right: 15px;
+        }
+        #messages{
+            float: right;
+            color:#337ab7;
+            margin-right: 15px;
+        }
+        .linkLeftMenu{
+            float: left;
+            position: relative;
+        }
+        #inbox{
+            font-size: 35px;
+            color:#337ab7;
+            position: absolute;
+        }
+        #sent{
+            font-size: 35px;
+            color:#337ab7;
+            margin-top:45px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<header id="headerStyle">
+    <h1 id="userText">User Page</h1>
+    <div id="headerButton">
+        <a href="/logout" id="logout">Logout</a>
+        <a href="/home" id="userPage">User Page</a>
+        <a href="/home/userHistoryOrdering" id="historyOrderings">History of Orderings</a>
+        <a href="/home/messages" id="messages">Messages</a>
+        <a href="/" id="home">Home</a>
+    </div>
+</header>
+<div id="buttonSentMessage">
+    <a href="/home/sendMessage"><button>Send Message</button></a>
+</div>
+<div class="linkLeftMenu">
+    <a id="inbox">Inbox</a>
+    <a id="sent">Sent</a>
+</div>
+<div class="container my-2">
+    <div class="card">
+        <div class="card-body">
+            <div th:switch="${smsList}" class="container my-5">
+                <div class="col-md-10">
+                    <div th:case="*">
+                        <table class="table table-striped table-responsive-md">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Subject</th>
+                                <th>Content</th>
+                                <th>Date</th>
+                                <th>Details</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="sms : ${smsList}">
+                                <td th:text="${sms.id}"></td>
+                                <td th:text="${sms.subjects}"></td>
+                                <td th:text="${sms.contents}"></td>
+                                <td th:text="${sms.dateGettingMessage}"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p id="footer">2019 year</p>
+</footer>
+</body>
+</html>

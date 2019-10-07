@@ -1,6 +1,6 @@
 package com.webencyclop.demo.service.implementation.forAdmin;
 
-import com.webencyclop.demo.model.Ordering;
+import com.webencyclop.demo.model.forUser.Ordering;
 import com.webencyclop.demo.service.interfaces.forAdmin.HistoryOrderingService;
 import org.junit.Test;
 import org.junit.runner.RunWith;

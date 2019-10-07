@@ -87,8 +87,8 @@
     <a href="/home/sendMessage"><button>Send Message</button></a>
 </div>
 <div class="linkLeftMenu">
-    <a id="inbox">Inbox</a>
-    <a id="sent">Sent</a>
+    <a id="inbox" href="/home/messages">Inbox</a>
+    <a id="sent" href="/home/sendMessageBuCurrentUser">Sent</a>
 </div>
 <div class="container my-2">
     <div class="card">
@@ -103,6 +103,8 @@
                                 <th>Subject</th>
                                 <th>Content</th>
                                 <th>Date</th>
+                                <th>Details</th>
+                                <th>Delete</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -112,13 +114,13 @@
                                 <td th:text="${sms.contents}"></td>
                                 <td th:text="${sms.dateGettingMessage}"></td>
                                 <td>
-                                    <a th:href="@{admin/editRoom/{id}(id=${sms.id})}"
+                                    <a th:href="@{home/message/details/{id}(id=${sms.id})}"
                                        class="btn btn-primary">
                                         <i class="fas fa-user-edit ml-2"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a th:href="@{admin/deleteRoom/{id}(id=${sms.id})}"
+                                    <a th:href="@{home/messages/{id}(id=${sms.id})}"
                                        class="btn btn-primary">
                                         <i class="fas fa-user-times ml-2"></i>
                                     </a>

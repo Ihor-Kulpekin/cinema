@@ -1,5 +1,6 @@
 package com.webencyclop.demo.controller.implementation.admin;
 
+import com.webencyclop.demo.controller.implementation.admin.movie.MovieController;
 import com.webencyclop.demo.model.forAdmin.Movie;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import org.junit.Before;

@@ -1,7 +1,7 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
-import com.webencyclop.demo.controller.interfaces.forUser.BaseAuthenticationController;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.controller.interfaces.forUser.authentication.BaseAuthenticationController;
+import com.webencyclop.demo.model.forUser.User;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -21,8 +21,12 @@ import java.util.List;
 @Controller
 public class AuthenticationController implements BaseAuthenticationController {
 
+	private final UserService userService;
+
 	@Autowired
-	private UserService userService;
+	public AuthenticationController(UserService userService) {
+		this.userService = userService;
+	}
 
 	@Override
 	public ModelAndView login() {

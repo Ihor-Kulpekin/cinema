@@ -1,7 +1,7 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
 import com.webencyclop.demo.DemoApplication;
-import com.webencyclop.demo.model.Sms;
+import com.webencyclop.demo.model.messaging.Sms;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

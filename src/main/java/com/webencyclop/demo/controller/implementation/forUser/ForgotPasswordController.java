@@ -1,11 +1,11 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
-import com.webencyclop.demo.controller.interfaces.forUser.BaseForgotPasswordController;
-import com.webencyclop.demo.model.ConfirmationToken;
-import com.webencyclop.demo.model.MailMessage;
-import com.webencyclop.demo.model.User;
-import com.webencyclop.demo.service.interfaces.forUser.ConfirmationTokenService;
-import com.webencyclop.demo.service.interfaces.forUser.EmailSenderService;
+import com.webencyclop.demo.controller.interfaces.forUser.resetPassword.BaseForgotPasswordController;
+import com.webencyclop.demo.model.resetPassword.ConfirmationToken;
+import com.webencyclop.demo.model.resetPassword.MailMessage;
+import com.webencyclop.demo.model.forUser.User;
+import com.webencyclop.demo.service.interfaces.forUser.resetPassword.ConfirmationTokenService;
+import com.webencyclop.demo.service.interfaces.forUser.resetPassword.EmailSenderService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

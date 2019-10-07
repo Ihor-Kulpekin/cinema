@@ -1,7 +1,7 @@
 package com.webencyclop.demo.service.implementation.forUser;
 
-import com.webencyclop.demo.model.Sms;
-import com.webencyclop.demo.service.interfaces.forUser.SmsService;
+import com.webencyclop.demo.model.messaging.Sms;
+import com.webencyclop.demo.service.interfaces.forUser.messaging.SmsService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

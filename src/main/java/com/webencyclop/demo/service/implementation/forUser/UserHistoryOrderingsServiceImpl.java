@@ -1,7 +1,7 @@
 package com.webencyclop.demo.service.implementation.forUser;
 
-import com.webencyclop.demo.model.Ordering;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.model.forUser.Ordering;
+import com.webencyclop.demo.model.forUser.User;
 import com.webencyclop.demo.repository.interfaces.forUser.UserHistoryOrderingsRepository;
 import com.webencyclop.demo.repository.interfaces.forUser.UserRepository;
 import com.webencyclop.demo.service.interfaces.forUser.UserHistoryOrderingsService;

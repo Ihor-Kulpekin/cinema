@@ -1,8 +1,8 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
 import com.webencyclop.demo.controller.interfaces.forUser.BaseUserHistoryController;
-import com.webencyclop.demo.model.Ordering;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.model.forUser.Ordering;
+import com.webencyclop.demo.model.forUser.User;
 import com.webencyclop.demo.service.interfaces.forUser.UserHistoryOrderingsService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

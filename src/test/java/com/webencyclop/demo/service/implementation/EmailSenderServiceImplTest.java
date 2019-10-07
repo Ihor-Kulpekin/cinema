@@ -1,8 +1,8 @@
 package com.webencyclop.demo.service.implementation;
 
-import com.webencyclop.demo.model.MailMessage;
-import com.webencyclop.demo.model.SmtpServerRule;
-import com.webencyclop.demo.service.interfaces.forUser.EmailSenderService;
+import com.webencyclop.demo.model.resetPassword.MailMessage;
+import com.webencyclop.demo.model.resetPassword.SmtpServerRule;
+import com.webencyclop.demo.service.interfaces.forUser.resetPassword.EmailSenderService;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

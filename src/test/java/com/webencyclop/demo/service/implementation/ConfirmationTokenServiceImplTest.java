@@ -1,11 +1,11 @@
 package com.webencyclop.demo.service.implementation;
 
-import com.webencyclop.demo.model.ConfirmationToken;
-import com.webencyclop.demo.model.MasterCard;
-import com.webencyclop.demo.model.Role;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.model.resetPassword.ConfirmationToken;
+import com.webencyclop.demo.model.forUser.MasterCard;
+import com.webencyclop.demo.model.forUser.Role;
+import com.webencyclop.demo.model.forUser.User;
 import com.webencyclop.demo.repository.interfaces.forUser.RoleRepository;
-import com.webencyclop.demo.service.interfaces.forUser.ConfirmationTokenService;
+import com.webencyclop.demo.service.interfaces.forUser.resetPassword.ConfirmationTokenService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.junit.Before;
 import org.junit.Test;

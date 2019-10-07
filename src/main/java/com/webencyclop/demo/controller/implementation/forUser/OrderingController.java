@@ -1,15 +1,15 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
-import com.webencyclop.demo.controller.interfaces.forUser.BaseOrderingController;
-import com.webencyclop.demo.model.Ordering;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.controller.interfaces.forUser.ordering.BaseOrderingController;
+import com.webencyclop.demo.model.forUser.Ordering;
+import com.webencyclop.demo.model.forUser.User;
 import com.webencyclop.demo.model.forAdmin.Movie;
 import com.webencyclop.demo.model.forAdmin.Room;
 import com.webencyclop.demo.model.forAdmin.Ticket;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
-import com.webencyclop.demo.service.interfaces.forUser.OrderingService;
+import com.webencyclop.demo.service.interfaces.forUser.ordering.OrderingService;
 import com.webencyclop.demo.service.interfaces.forUser.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;

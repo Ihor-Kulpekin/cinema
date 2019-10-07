@@ -1,6 +1,6 @@
 package com.webencyclop.demo.settings_email;
 
-import com.webencyclop.demo.model.MailMessage;
+import com.webencyclop.demo.model.resetPassword.MailMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;

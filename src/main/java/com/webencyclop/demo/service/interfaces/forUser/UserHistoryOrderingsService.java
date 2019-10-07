@@ -1,7 +1,7 @@
 package com.webencyclop.demo.service.interfaces.forUser;
 
-import com.webencyclop.demo.model.Ordering;
-import com.webencyclop.demo.model.User;
+import com.webencyclop.demo.model.forUser.Ordering;
+import com.webencyclop.demo.model.forUser.User;
 
 import java.util.List;
 

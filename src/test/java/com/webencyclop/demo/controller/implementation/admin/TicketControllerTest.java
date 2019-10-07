@@ -1,5 +1,6 @@
 package com.webencyclop.demo.controller.implementation.admin;
 
+import com.webencyclop.demo.controller.implementation.admin.ticket.TicketController;
 import com.webencyclop.demo.model.forAdmin.Ticket;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
 import org.junit.Before;
