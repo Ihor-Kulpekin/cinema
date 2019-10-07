@@ -1,6 +1,7 @@
 package com.webencyclop.demo.controller.implementation.forUser;
 
 import com.webencyclop.demo.DemoApplication;
+import com.webencyclop.demo.model.Sms;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,7 @@ public class MessageControllerTest {
     public void messagePageTest() throws Exception {
         String url = "/home/messages";
         HttpHeaders headers = new HttpHeaders();
-        HttpEntity<String> entity = new HttpEntity<>(null,headers);
+        HttpEntity<Sms> entity = new HttpEntity<>(null,headers);
         ResponseEntity<String> responseEntity =restTemplate.exchange(getRootUrl()+url, HttpMethod.GET,
                 entity,String.class);
         assertNotNull(responseEntity.getBody());
