@@ -13,7 +13,7 @@ import javax.validation.Valid;
 public interface BaseMovieController {
 
     @GetMapping("/admin/listMovies")
-    ModelAndView showListMovies();
+    ModelAndView listMovies();
 
     @GetMapping("/admin/new")
     ModelAndView showPageAddMovie();
@@ -21,13 +21,13 @@ public interface BaseMovieController {
     @PostMapping("/admin/new")
     String saveMovie(@Valid Movie movie);
 
-    @GetMapping("/admin/edit/{id}")
+    @GetMapping("/admin/listMovies/movie/{id}")
     ModelAndView showPageEditMovie(@PathVariable int id);
 
-    @PostMapping("/admin/edit")
+    @PostMapping("/admin/listMovies/movie")
     String editMovie(@Valid Movie movie);
 
-    @DeleteMapping("/admin/delete/{id}")
+    @DeleteMapping("/admin/listMovies/movie/{id}")
     ModelAndView deleteMovie(@PathVariable int id);
 
     @GetMapping("/admin/detail/{id}")

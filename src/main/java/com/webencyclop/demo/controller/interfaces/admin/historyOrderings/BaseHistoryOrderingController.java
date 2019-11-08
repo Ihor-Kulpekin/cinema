@@ -7,6 +7,6 @@ import org.springframework.web.servlet.ModelAndView;
 public interface BaseHistoryOrderingController {
 
     @GetMapping(value = "/admin/historyOrderings")
-    ModelAndView showPageHistoryOrderings();
+    ModelAndView historyOrderings();
 
 }

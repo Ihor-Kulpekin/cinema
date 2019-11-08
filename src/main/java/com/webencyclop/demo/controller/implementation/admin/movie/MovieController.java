@@ -22,7 +22,7 @@ public class MovieController implements BaseMovieController {
     }
 
     @Override
-    public ModelAndView showListMovies() {
+    public ModelAndView listMovies() {
         ModelAndView modelAndView = new ModelAndView();
         List<Movie> movieList = movieService.listMovies();
         modelAndView.addObject("movieList",movieList);

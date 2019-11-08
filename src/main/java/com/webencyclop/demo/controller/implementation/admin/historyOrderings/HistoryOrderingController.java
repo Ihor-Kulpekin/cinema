@@ -20,7 +20,7 @@ public class HistoryOrderingController implements BaseHistoryOrderingController 
     }
 
     @Override
-    public ModelAndView showPageHistoryOrderings() {
+    public ModelAndView historyOrderings() {
         ModelAndView modelAndView = new ModelAndView("historyOrderings");
         List<Ordering> listOrderings = historyOrderingService.listHistoryOrderings();
         modelAndView.addObject("listOrderings",listOrderings);
