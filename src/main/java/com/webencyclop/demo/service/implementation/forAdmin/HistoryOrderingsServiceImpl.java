@@ -4,6 +4,7 @@ import com.webencyclop.demo.model.forUser.Ordering;
 import com.webencyclop.demo.repository.interfaces.forAdmin.HistoryOrderingsRepository;
 import com.webencyclop.demo.service.interfaces.forAdmin.HistoryOrderingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +19,7 @@ public class HistoryOrderingsServiceImpl implements HistoryOrderingService {
         this.historyOrderingsRepository = historyOrderingsRepository;
     }
 
+    @Cacheable("orderings")
     @Override
     public List<Ordering> listHistoryOrderings() {
         return historyOrderingsRepository.findAll();

@@ -4,6 +4,7 @@ import com.webencyclop.demo.model.forAdmin.Room;
 import com.webencyclop.demo.repository.interfaces.forAdmin.RoomRepository;
 import com.webencyclop.demo.service.interfaces.forAdmin.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -38,6 +39,7 @@ public class RoomServiceImpl implements RoomService {
     }
 
     @Override
+    @Cacheable("rooms")
     public List<Room> listRooms() {
         return roomRepository.findAll();
     }

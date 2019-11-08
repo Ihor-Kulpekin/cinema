@@ -4,6 +4,7 @@ import com.webencyclop.demo.model.forAdmin.Ticket;
 import com.webencyclop.demo.repository.interfaces.forAdmin.TicketRepository;
 import com.webencyclop.demo.service.interfaces.forAdmin.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -39,6 +40,7 @@ public class TicketServiceImpl implements TicketService {
     }
 
 
+    @Cacheable("tickets")
     @Override
     public List<Ticket> listTickets() {
         return ticketRepository.findAll();

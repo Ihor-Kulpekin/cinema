@@ -4,6 +4,7 @@ import com.webencyclop.demo.model.forAdmin.Movie;
 import com.webencyclop.demo.repository.interfaces.forAdmin.MovieRepository;
 import com.webencyclop.demo.service.interfaces.forAdmin.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -46,6 +47,7 @@ public class MovieServiceImpl implements MovieService {
         movieRepository.delete(deletedMovie);
     }
 
+    @Cacheable("movies")
     @Override
     public List<Movie> listMovies() {
         return movieRepository.findAll();
