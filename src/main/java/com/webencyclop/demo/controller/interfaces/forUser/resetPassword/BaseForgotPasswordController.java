@@ -14,10 +14,10 @@ public interface BaseForgotPasswordController {
     @PostMapping(value = "/forgot")
     ModelAndView processForgotPassword(ModelAndView modelAndView,User user);
 
-    @GetMapping(value = "/reset")
+    @GetMapping(value = "/forgot")
     ModelAndView showResetPasswordPage(ModelAndView modelAndView,
                                        @RequestParam("token") String token);
 
-    @PostMapping(value = "/reset")
+    @PostMapping(value = "/forgot")
     ModelAndView setNewPassword(ModelAndView modelAndView, User user);
 }

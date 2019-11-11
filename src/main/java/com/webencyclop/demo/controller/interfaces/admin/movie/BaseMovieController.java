@@ -15,21 +15,21 @@ public interface BaseMovieController {
     @GetMapping("/admin/listMovies")
     ModelAndView listMovies();
 
-    @GetMapping("/admin/new")
+    @GetMapping("/admin/listMovies")
     ModelAndView showPageAddMovie();
 
-    @PostMapping("/admin/new")
+    @PostMapping("/admin/listMovies")
     String saveMovie(@Valid Movie movie);
 
-    @GetMapping("/admin/listMovies/movie/{id}")
+    @GetMapping("/admin/listMovies/{id}")
     ModelAndView showPageEditMovie(@PathVariable int id);
 
-    @PostMapping("/admin/listMovies/movie")
+    @PostMapping("/admin/listMovies")
     String editMovie(@Valid Movie movie);
 
-    @DeleteMapping("/admin/listMovies/movie/{id}")
+    @DeleteMapping("/admin/listMovies/{id}")
     ModelAndView deleteMovie(@PathVariable int id);
 
-    @GetMapping("/admin/detail/{id}")
+    @GetMapping("/admin/listMovies/{id}")
     ModelAndView detailsMovie(@PathVariable int id);
 }

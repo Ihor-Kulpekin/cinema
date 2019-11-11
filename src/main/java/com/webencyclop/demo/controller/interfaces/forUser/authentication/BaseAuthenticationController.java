@@ -22,7 +22,7 @@ public interface BaseAuthenticationController {
      @GetMapping("/home")
      ModelAndView home();
 
-     @GetMapping("/admin")
+     @GetMapping("/home")
      ModelAndView adminHome();
 
      @PostMapping("/register")

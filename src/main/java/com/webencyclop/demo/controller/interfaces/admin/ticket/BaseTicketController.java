@@ -11,18 +11,18 @@ public interface BaseTicketController {
     @GetMapping("/admin/listTickets")
     ModelAndView showListTicket();
 
-    @GetMapping("/admin/newTicket")
+    @GetMapping("/admin/listTickets")
     ModelAndView showPageAddTicket();
 
-    @PostMapping("/admin/newTicket")
+    @PostMapping("/admin/listTickets")
     ModelAndView saveTicket(@Valid Ticket ticket);
 
-    @GetMapping("/admin/editTicket/{id}")
+    @GetMapping("/admin/listTickets/{id}")
     ModelAndView showPageEditTicket(@PathVariable int id);
 
-    @PostMapping("/admin/editTicket")
+    @PostMapping("/admin/listTickets")
     ModelAndView editTicket(@Valid Ticket ticket);
 
-    @GetMapping("/admin/deleteTicket/{id}")
+    @GetMapping("/admin/listTickets/{id}")
     ModelAndView deleteTicket(@PathVariable int id);
 }

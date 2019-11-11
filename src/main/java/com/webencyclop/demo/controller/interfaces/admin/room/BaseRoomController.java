@@ -13,21 +13,21 @@ public interface BaseRoomController {
     @GetMapping("/admin/listRooms")
     ModelAndView showListRooms();
 
-    @GetMapping("/admin/newRoom")
+    @GetMapping("/admin/listRooms")
     ModelAndView showPageAddMovie();
 
-    @PostMapping("/admin/newRoom")
+    @PostMapping("/admin/listRooms")
     String saveMovie(@Valid Room room);
 
-    @GetMapping("/admin/editRoom/{id}")
+    @GetMapping("/admin/listRooms/{id}")
     ModelAndView showPageEditRoom(@PathVariable int id);
 
-    @PostMapping("/admin/editRoom")
+    @PostMapping("/admin/listRooms")
     String editRoom(@Valid Room room);
 
-    @GetMapping("/admin/deleteRoom/{id}")
+    @GetMapping("/admin/listRooms/{id}")
     String deleteRoom(@PathVariable int id);
 
-    @RequestMapping(value = "/admin/detailRoom/{id}")
+    @RequestMapping(value = "/admin/listRooms/{id}")
     ModelAndView detailsRoom(@PathVariable int id);
 }
